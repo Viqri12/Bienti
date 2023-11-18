@@ -125,7 +125,7 @@
                                         <br> Experts at what we do,
                                         <br> We make it happen.</h2>
                                 </div>
-                                <div class="welcome-one__solutions">
+                                <div class="welcome-one__solutions col-md-12">
                                     <div class="welcome-one__solutions-single">
                                         <div class="welcome-one__solutions-icon">
                                             <span class="icon-tick"></span>
