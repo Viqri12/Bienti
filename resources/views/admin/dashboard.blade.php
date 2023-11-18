@@ -140,7 +140,7 @@
                             <div class="d-flex align-items-center justify-content-between">
                                 <div class="">
                                     <img src="{{ asset('assets/images/icon/media.svg')}}" class="" alt="">
-                                    <div class="text-white text-center" style="font-size: 12px;">Media</div>
+                                    <div class="text-white text-center" style="font-size: 12px;">Media_1</div>
                                 </div>
                                 <div>
                                     <div class=" fw-bold text-white" style="font-size: 32px">{{ number_format($countMedia,0,',','.') }}</div>
