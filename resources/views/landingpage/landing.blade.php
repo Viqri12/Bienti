@@ -113,10 +113,6 @@
                                         <img src="assets/images/resources/welcome-bienti.png.png" alt="">
                                         <div class="welcome-one__shape-1"></div>
                                     </div>
-                                    <div class="welcome-one__trusted">
-                                        <p>Trusted by</p>
-                                        <h2 class="odometer" data-count="4890">00</h2>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -145,7 +141,7 @@
                                         <div class="welcome-one__solutions-text-box">
                                             <p>Solution for small & <br> large businesses</p>
                                         </div>
-                                    </div>YELL
+                                    </div>
                                 </div>
                                 <p class="welcome-one__right-text-1">Make is a jakarta-based digital agency. We guarantee results across three key business areas:
                                     web design & build,social media & digital marketing, and creative content.</p>
