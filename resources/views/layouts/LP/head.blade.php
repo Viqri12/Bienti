@@ -15,10 +15,10 @@
 
 
     <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap/css/bootstrap.min.css')}}" />
-    <link rel="stylesheet" href="{{ asset('assets/vendors/animate/animate.min.css')}}" />
+    {{-- <link rel="stylesheet" href="{{ asset('assets/vendors/animate/animate.min.css')}}" /> --}}
     <link rel="stylesheet" href="{{ asset('assets/vendors/fontawesome/css/all.min.css')}}" />
-    <link rel="stylesheet" href="{{ asset('assets/vendors/jarallax/jarallax.css')}}" />
-    <link rel="stylesheet" href="{{ asset('assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css')}}" />
+    {{-- <link rel="stylesheet" href="{{ asset('assets/vendors/jarallax/jarallax.css')}}" /> --}}
+    {{-- <link rel="stylesheet" href="{{ asset('assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css')}}" /> --}}
     <link rel="stylesheet" href="{{ asset('assets/vendors/nouislider/nouislider.min.css')}}" />
     <link rel="stylesheet" href="{{ asset('assets/vendors/nouislider/nouislider.pips.css')}}" />
     <link rel="stylesheet" href="{{ asset('assets/vendors/odometer/odometer.min.css')}}" />
@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="{{ asset('assets/vendors/owl-carousel/owl.theme.default.min.css')}}" />
     <link rel="stylesheet" href="{{ asset('assets/vendors/twentytwenty/twentytwenty.css')}}" />
     <link rel="stylesheet" href="{{ asset('assets/vendors/bxslider/jquery.bxslider.css')}}" />
-    <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap-select/css/bootstrap-select.min.css')}}" />
+    {{-- <link rel="stylesheet" href="{{ asset('assets/vendors/bootstrap-select/css/bootstrap-select.min.css')}}" /> --}}
     <link rel="stylesheet" href="{{ asset('assets/vendors/vegas/vegas.min.css')}}" />
     <link rel="stylesheet" href="{{ asset('assets/vendors/jquery-ui/jquery-ui.css')}}" />
     <link rel="stylesheet" href="{{ asset('assets/vendors/timepicker/timePicker.css')}}" />

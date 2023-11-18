@@ -190,7 +190,7 @@
                     </ul>
                 </div>
             </section>
-                <section class="we-change">
+                {{-- <section class="we-change">
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-6">
@@ -255,7 +255,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> --}}
             <section class="we-make">
                 <div class="we-make-bg" style="background-image: url(assets/images/backgrounds/we-make-bg.jpg)"></div>
                 <div class="container">
@@ -360,7 +360,7 @@
                     </div>
                 </div>
             </section>
-        <section class="portfolio-one">
+        <section class="portfolio-one mb-5">
             <div class="portfolio-one__container">
                 <div class="section-title text-center">
                     <span class="section-title__tagline">Recent work completed</span>
@@ -461,7 +461,7 @@
                 </div>
             </div>
         </section>
-        <section class="testimonial-one">
+        {{-- <section class="testimonial-one">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4 col-lg-5">
@@ -529,8 +529,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="two-boxes">
+        </section> --}}
+        <section class="two-boxes mt-5">
             <div class="container">
                 <div class="">
                     <div class="row">
