@@ -11,11 +11,11 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     @endif
-<main class="form-signin">
+<main class="form-signin col-4">
     <form action="{{ route('login-admin-bienti')}}" method="POST">
         @csrf
       <h1 class="h3 mb-3 fw-semibold text-center">Please sign in</h1>
-      <div class=" ">
+      <div class="">
         <div>
             <label for="email">Email address</label>
         </div>
@@ -42,7 +42,7 @@
           <input type="checkbox" value="remember-me"> Remember me
         </label>
       </div>
-      <button class="w-100 btn btn-lg btn-primary bg-primary" type="submit">Login</button>
+      <button class="w-100 btn col-6 btn-lg btn-primary bg-primary" type="submit">Login</button>
     </form>
     <small class="d-block text-center mt-2 text-danger">Not Registered? <a href="{{ route('register-admin')}}" class="text-primary">Register now!</a></small>
   </main>

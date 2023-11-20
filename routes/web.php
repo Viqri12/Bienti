@@ -23,7 +23,7 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 Route::get('/', [landingPage::class, 'index'])->name('landingpage');
 
 //  Route::get('login-admin', [LoginController::class, 'index'])->name('login-admin')->middleware('guest');
-//  Route::post('login-admin-bienti', [LoginController::class, 'login'])->name('login-admin-bienti');
+ Route::post('login-admin-bienti', [LoginController::class, 'login'])->name('login-admin-bienti');
 
  Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
  
