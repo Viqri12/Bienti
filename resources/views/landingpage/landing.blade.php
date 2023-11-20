@@ -294,8 +294,8 @@
                                     <div class="we-make__progress-single">
                                         <h4 class="we-make__progress-title">Influencer KOL's Marketing</h4>
                                         <div class="bar marb-0">
-                                            <div class="bar-inner count-bar" data-percent="97%">
-                                                <div class="count-text">38%</div>
+                                            <div class="bar-inner count-bar" data-percent="70%">
+                                                <div class="count-text">70%</div>
                                             </div>
                                         </div>
                                     </div>
