@@ -85,7 +85,7 @@
                             <li><a href="blog-details.html">Blog details</a></li>
                         </ul>
                     </li>
-                    @auth
+                    {{-- @auth
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                          Welcome back , {{ auth()->user()->name }}
@@ -112,7 +112,7 @@
                                 </div>
                             </div>
                         </li>
-                    @endauth
+                    @endauth --}}
                 </ul>
             </div>
             <div class="main-menu-wrapper__right ">
