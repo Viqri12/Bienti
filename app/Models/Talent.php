@@ -10,7 +10,7 @@ class Talent extends Model
     use HasFactory;
 
     
-    protected $table = 'Talent';
+    protected $table = 'talent';
     protected $fillable = [
         'name',
         'username',
