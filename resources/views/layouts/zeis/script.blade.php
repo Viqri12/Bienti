@@ -52,7 +52,7 @@
 
 	{{-- Table --}}
 
+	<script src="{{ asset('resources/js/app.js') }}"></script>
 
-
-      @vite(['resources/js/app.js'])
+      {{-- @vite(['resources/js/app.js']) --}}
    
