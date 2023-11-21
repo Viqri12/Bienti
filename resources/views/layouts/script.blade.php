@@ -37,3 +37,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- template js -->
     <script src="{{ asset('assets/js/moniz.js') }}"></script>
+
+    <script src="{{ asset('assets-baru/scripts/jquery.min.js') }}"></script>
+    <script src="{{ asset('assets-baru/scripts/popper.js') }}"></script>
+    <script src="{{ asset('assets-baru/scripts/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets-baru/scripts/main.js') }}"></script>
