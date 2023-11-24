@@ -35,9 +35,9 @@
                                             @foreach ($influencer as $key => $item)
                                             <tr class="text-center" style="font-size: 12px;">
                                                 <td>
-                                                    <input type="checkbox" class="checkData" onchange="pilih({
-                                                    key : {{ $key }},
-                                                })" name="row1">
+                                                      <input type="checkbox" class="checkData{{ $key }}" onchange="pilih({
+                                                        key : {{ $key }},
+                                                    })" name="row1">
                                                 </td>
                                                 <td>{{ $loop->iteration }}</td>
                                                 <td>{{ $item->name }}</td>
@@ -91,28 +91,50 @@
             </div>
         </div>
         <script>
-            var option = {
+         var option = {
                 lengthChange: false,
-                buttons: [ 'copy', 'excel', 'pdf', 'colvis' ],
+                buttons: [
+                    'pdf', 
+                    'colvis' ,
+                    'selectRows',
+                    'selectColumns',
+                    'selectCells', 
+                    {  
+                        extend: 'excelHtml5',
+                        exportOptions: {
+                            rows: []
+                        }
+                    }
+                ],
                 lengthMenu: [
                     [5, 10, 15, 20, 25, 30, 40, 50, -1],
                     [5, 10, 15, 20, 25, 30, 40, 50, "All"]
                 ],
+                dom :  'Bfrtip'
             }
+
             var table = $('#example').DataTable(option);
-            console.log(table)
             var checkData = document.querySelectorAll('.checkData')
+            //  console.log(checkData)
+            
             table.buttons().container()
                 .appendTo( '#example_wrapper .col-sm-6:eq(0)' );
             var alldata = table.rows().data();
+
             function pilih(x){
-                var cariCheck = checkData[x.key].getAttribute('checked')
-                if(cariCheck){
-                    checkData[x.key].removeAttribute('checked','checked')
+                var checkInput = document.querySelector(`.checkData${x.key}`)
+                console.log(checkInput.checked)
+                if (checkInput.checked)
+                {
+                    var cari = option.buttons[5].exportOptions.rows.find(val => val == x.key)
+                    if (!cari) 
+                    {
+                        option.buttons[5].exportOptions.rows.push(x.key) 
+                    }
+                    console.log(option.buttons[5].exportOptions.rows) 
                 }else{
-                    checkData[x.key].setAttribute('checked','checked')
+                    option.buttons[5].exportOptions.rows = option.buttons[5].exportOptions.rows.filter(val => val != x.key)
                 }
-                console.log(cariCheck)
             }
         </script>
 @endsection
