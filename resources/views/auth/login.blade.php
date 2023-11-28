@@ -45,9 +45,9 @@
         <button class="w-100 btn btn-lg btn-primary bg-primary" type="submit">Login</button>
       </div>
     </form>
-    <div class="">
+    {{-- <div class="">
       <small class="d-block text-center text-danger">Not Registered? <a href="{{ route('register-admin')}}" class="text-primary">Register now!</a></small>
-    </div>
+    </div> --}}
   </main>
 
   {{-- <section class="vh-100">
