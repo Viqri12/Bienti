@@ -17,7 +17,7 @@
                             <label class="fw-bold form-label">Nama</label>
                         </div>
                         <div class="">
-                            <input required type="text" name="name" class=" rounded-2 border form-control bg-transparent p-3 col-12" placeholder="Masukan Jumlah Followers">
+                            <input required type="text" name="name" class=" rounded-2 border form-control bg-transparent p-3 col-12" placeholder="Masukan Nama Influencer">
                         </div>
                     </div>
                     <div class=" col-3  cursor-pointer">
@@ -74,7 +74,7 @@
                             <label class="fw-bold form-label">Domisili</label>
                         </div>
                         <div class="">
-                            <input required type="text" name="domisili" class="form-control rounded-2 border bg-transparent p-3 col-12" placeholder="Masukan Jumlah Followers">
+                            <input required type="text" name="domisili" class="form-control rounded-2 border bg-transparent p-3 col-12" placeholder="Masukan Domisili">
                         </div>
                     </div> 
                     <div class=" col-3 ">
@@ -82,7 +82,7 @@
                             <label class="fw-bold form-label">Contact person</label>
                         </div>
                         <div class="">
-                            <input required type="tel" name="phone" class="form-control rounded-2 border bg-transparent p-3 col-12" placeholder="Masukan Username">
+                            <input required type="tel" name="phone" class="form-control rounded-2 border bg-transparent p-3 col-12" placeholder="Contact Person">
                         </div>
                     </div>
                 </div>
