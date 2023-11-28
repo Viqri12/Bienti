@@ -28,7 +28,7 @@ class DashboardController extends Controller
     public function index()
     {
         $table = 'Dashboard';
-        $influencer = influencer::with('sosialmedia','category_1','tier')->get();
+        $influencer = influencer::with('sosialmedia','category_1','tier')->latest()->get();
         $sosial = SosialMedia::all();
         $allCount = [];
         foreach ($sosial as $key => $value) {
@@ -41,7 +41,7 @@ class DashboardController extends Controller
         $countComunity = Comunity::count();
         $countMedia = Media::count();
         $countTalent = Talent::count();
-        // return $countComunity;
+        // return $influencer;
         return view('admin.dashboard', compact('table','influencer','sosial','allCount','countComunity','countMedia','countTalent'));
     }
 
@@ -58,6 +58,7 @@ class DashboardController extends Controller
     public function influencerPost(Request $request)
     {
           // return $request;
+        //   return gettype($request->category[0]);
           $create = influencer::create([
             'name' => $request->name,   
             'phone' => $request->phone,
@@ -67,11 +68,22 @@ class DashboardController extends Controller
         ]);
         for($i=0; $i < count($request->category);$i++)
         {
-            InfluencerHasCategory::create([
-                'influencer_id' => $create->id,
-                'category_influencer_id' => $request->category[$i]
-            ]);
+            if(is_numeric($request->category[$i])){
+                InfluencerHasCategory::create([
+                    'influencer_id' => $create->id,
+                    'category_influencer_id' => $request->category[$i]
+                ]);
+            }else{
+                $createCategory = CategoryInfluencer::create([
+                    'name' => $request->category[$i]
+                ]);
+                InfluencerHasCategory::create([
+                    'influencer_id' => $create->id,
+                    'category_influencer_id' => $createCategory->id 
+                ]);
+            }
         }
+        // return gettype($request->category[0]);
 
         Alert::success('Berhasil', 'Influencer Berhasil di tambahkan');
         return redirect('admin/dashboard');
