@@ -17,7 +17,7 @@
         </div>
         <div class="text-end">
             <a href="{{ route('tambah-influencer') }}" class="btn btn-primary">
-                Tambah Influencer
+                Tambah Influencer 
             </a>
         </div>
 
