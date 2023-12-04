@@ -72,7 +72,7 @@
                 <div class="col-xl-12">
                     <div class="site-footer-bottom__inner">
                         <p class="site-footer-bottom__copy-right">© Copyright 2021 by <a
-                                href="#">Layerdrops.com</a></p>
+                                href="#">bienti.id</a></p>
                     </div>
                 </div>
             </div>

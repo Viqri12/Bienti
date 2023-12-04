@@ -1,6 +1,6 @@
 @extends('layouts.zeis.app')
 @section('content')
-        <div class="mt-3 mb-2 d-flex align-items-center col-8 ms-3">
+        <div class="mt-3 mb-2 d-flex align-items-center col-md-8 ms-3">
             <span class="fw-bold" style="font-size: 24px;">Tambah Influencer</span>
         </div>
         <div class="row border mb-4 col-11 ms-3 bg-white shadow rounded-3">
@@ -12,7 +12,7 @@
             <form action="{{ route('tambah-data-influencer') }}" method="POST">
                 @csrf
                 <div class="row g-3 mb-2 p-3 col-12">
-                    <div class=" col-3 ">
+                    <div class=" col-md-3 ">
                         <div class="">
                             <label class="fw-bold form-label">Nama</label>
                         </div>
@@ -20,7 +20,7 @@
                             <input required type="text" name="name" class=" rounded-2 border form-control bg-transparent p-3 col-12" placeholder="Masukan Nama Influencer">
                         </div>
                     </div>
-                    <div class=" col-3  cursor-pointer">
+                    <div class=" col-md-3  cursor-pointer">
                         <div class="">
                             <label class="fw-bold form-label">Jenis Kelamin</label>
                         </div>
@@ -48,7 +48,7 @@
                         {
                             this.selected = this.selected.filter(val => val.id != y)
                         }
-                    }" class=" col-3 ">
+                    }" class=" col-md-3 ">
                         <div class="">
                             <label class="fw-bold form-label">Category</label>
                         </div>
@@ -58,7 +58,7 @@
                             @endforeach
                         </select>
                     </div>   
-                    <div class=" col-3  cursor-pointer">
+                    <div class=" col-md-3  cursor-pointer">
                         <div class="">
                             <label class="fw-bold form-label">Tier</label>
                         </div>
@@ -69,7 +69,7 @@
                             @endforeach
                         </select>
                     </div>
-                    <div class=" col-3 ">
+                    <div class=" col-md-3 ">
                         <div class="">
                             <label class="fw-bold form-label">Domisili</label>
                         </div>
@@ -77,7 +77,7 @@
                             <input required type="text" name="domisili" class="form-control rounded-2 border bg-transparent p-3 col-12" placeholder="Masukan Domisili">
                         </div>
                     </div> 
-                    <div class=" col-3 ">
+                    <div class=" col-md-3 ">
                         <div class="">
                             <label class="fw-bold form-label">Contact person</label>
                         </div>

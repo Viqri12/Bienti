@@ -20,7 +20,7 @@
             pointer-events: auto; 
         }
 </style>
-        <div class="mt-3 mb-2 d-flex align-items-center col-8 ms-3">
+        <div class="mt-3 mb-2 d-md-flex align-items-center col-md-8 ms-3">
             <span class="fw-bold" style="font-size: 24px;">Input  KOL Tiktok</span>
         </div>
         <div class="row border mb-4 col-11 ms-3 bg-white shadow rounded-3">
@@ -32,7 +32,7 @@
             <form action="{{ route('tambah-instagram') }}" method="POST">
                 @csrf
                 <div class="row g-3 mb-2 p-3 col-12">
-                    <div class=" col-4 cursor-pointer">
+                    <div class=" col-md-4 ">
                         <div class="">
                             <label class="fw-bold form-label">Name</label>
                         </div>
@@ -43,7 +43,7 @@
                             @endforeach
                         </select>
                     </div>
-                    <div class=" col-4">
+                    <div class=" col-md-4">
                         <div class="">
                             <label class="fw-bold form-label">Followers</label>
                         </div>
@@ -51,7 +51,7 @@
                             <input type="text" name="followers" class=" form-control col-12" placeholder="Masukan Jumlah Followers">
                         </div>
                     </div> 
-                    <div class=" col-4">
+                    <div class=" col-md-4">
                         <div class="">
                             <label class="fw-bold form-label">Username</label>
                         </div>
@@ -60,7 +60,7 @@
                         </div>
                     </div> 
                     @foreach ($social->RateCard as $item)
-                    <div class=" col-4">
+                    <div class=" col-md-4">
                         <div class="">
                             <label class="fw-bold form-label">{{ $item->name }}</label>
                         </div>
@@ -71,7 +71,7 @@
                         </div>  
                     </div>  
                     @endforeach          
-                    <div class=" col-4">
+                    <div class=" col-md-4">
                         <div class="">
                             <label class="fw-bold form-label">Tiktok Link</label>
                         </div>
@@ -79,7 +79,7 @@
                             <input type="text" name="ig_link" class=" form-control col-12" placeholder="wwww.tiktok.com/p/CvO8pb8rkm_/">
                         </div>  
                     </div> 
-                    <div class=" col-4">
+                    <div class=" col-md-4">
                         <div class="">
                             <label class="fw-bold form-label">Notes</label>
                         </div>
@@ -87,7 +87,7 @@
                             <textarea id="deskripsi" name="notes" class="form-control" name="deskripsi" cols="48"></textarea>
                         </div> 
                     </div> 
-                <div class="d-flex justify-content-end  col-8" style="">
+                <div class="d-flex justify-content-end  col-md-8 col-sm-12" style="">
                     <button  class="bg-transparent border-0">
                         <img src="{{ asset('assets-baru/images/img.svg')}}" alt="">
                     </button>

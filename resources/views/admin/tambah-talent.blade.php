@@ -20,7 +20,7 @@
             pointer-events: auto; 
         }
 </style>
-        <div class="mt-3 mb-2 d-flex align-items-center col-8 ms-3">
+        <div class="mt-3 mb-2 d-md-flex align-items-center col-md-8 ms-3">
             <span class="fw-bold" style="font-size: 24px;">Input  KOL Talent / MC</span>
         </div>
             <div class="row border mb-4 col-11 ms-3 bg-white shadow rounded-3">
@@ -32,7 +32,7 @@
             <form action="{{ route('tambah-talent')}}" method="POST">
                     @csrf
                 <div class="row p-3 g-3 mb-3 col-12">
-                    <div class=" col-4 ">
+                    <div class=" col-md-4 ">
                         <div class="">
                             <span class="fw-bold form-label ">Name</span>
                         </div>
@@ -40,7 +40,7 @@
                             <input type="text" name="name" class=" form-control col-12" placeholder="Masukan Nama">
                         </div>
                     </div>
-                    <div class=" col-4 ">
+                    <div class=" col-md-4 ">
                         <div class="">
                             <span class="fw-bold form-label">Username</span>
                         </div>
@@ -48,7 +48,7 @@
                             <input type="text" name="username" class=" form-control col-12" placeholder="Masukan Username">
                         </div>
                     </div>
-                    <div class=" col-4 ">
+                    <div class=" col-md-4 ">
                         <div class="">
                             <span class="fw-bold form-label">Followers</span>
                         </div>
@@ -56,7 +56,7 @@
                             <input type="text" name="followers" class=" form-control col-12" placeholder="Masukan Jumlah Followers">
                         </div>
                     </div> 
-                    <div class=" col-4 ">
+                    <div class=" col-md-4 ">
                         <div class="">
                             <span class="fw-bold form-label">Instagram Link</span>
                         </div>
@@ -64,7 +64,7 @@
                             <input type="text" name="link_sosmed" class=" form-control col-12" placeholder="wwww.tiktok.com/p/CvO8pb8rkm_/">
                         </div>  
                     </div> 
-                    <div class=" col-4 ">
+                    <div class=" col-md-4 ">
                         <div class="">
                             <span class="fw-bold form-label">Rate Card</span>
                         </div>
@@ -72,7 +72,7 @@
                             <input type="text" name="rate_card" class=" form-control col-12">
                         </div>  
                     </div> 
-                    <div class=" col-4  cursor-pointer">
+                    <div class=" col-md-4 ">
                         <div class="">
                             <span class="fw-bold form-label">Jenis Kelamin</span>
                         </div>
@@ -82,7 +82,7 @@
                             <option value="perempuan">Perempuan</option>
                         </select>
                     </div>
-                    <div class=" col-4 ">
+                    <div class=" col-md-4 ">
                         <div class="">
                             <span class="fw-bold form-label">Domisili</span>
                         </div>
@@ -90,7 +90,7 @@
                             <input type="text" name="domisili" class=" form-control col-12" placeholder="Masukan Domisili">
                         </div>  
                     </div>      
-                    <div class=" col-4 ">
+                    <div class=" col-md-4 ">
                         <div class="">
                             <span class="fw-bold form-label">Contact Person</span>
                         </div>
@@ -98,7 +98,7 @@
                             <input type="text" name="contact_person" class=" form-control col-12" placeholder="Masukan Domisili">
                         </div>  
                     </div>      
-                    <div class=" col-4 ">
+                    <div class=" col-md-4 ">
                         <div class="">
                             <span class="fw-bold form-label">Notes</span>
                         </div>

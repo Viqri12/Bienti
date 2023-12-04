@@ -20,7 +20,7 @@
             pointer-events: auto; 
         }
 </style>
-        <div class="mt-3 mb-2 d-flex align-items-center col-8 ms-3">
+        <div class="mt-3 mb-2 d-md-flex align-items-center col-8 ms-3">
             <span class="fw-bold" style="font-size: 24px;">Input Media</span>
         </div>
             <div class="row border mb-4 col-11 ms-3 bg-white shadow rounded-3">
@@ -32,7 +32,7 @@
             <form action="{{ route('tambah-media')}}" method="POST">
                     @csrf
                 <div class="row g-3 mb-3 p-3 col-12">
-                    <div class=" col-4 ">
+                    <div class=" col-md-4 ">
                         <div class="">
                             <label class="fw-bold form-label">Nama Media</label>
                         </div>
@@ -40,7 +40,7 @@
                             <input type="text" name="name" class=" form-control col-12"  placeholder="Masukan Nama">
                         </div>
                     </div>
-                    <div class=" col-4 ">
+                    <div class=" col-md-4 ">
                         <div class="">
                             <label class="fw-bold form-label ">Instagram Link</label>
                         </div>
@@ -48,7 +48,7 @@
                             <input type="text" name="ig_link" class=" form-control col-12" placeholder="wwww.tiktok.com/p/CvO8pb8rkm_/">
                         </div>  
                     </div>
-                    <div class=" col-4 ">
+                    <div class=" col-md-4 ">
                         <div class="">
                             <label class="fw-bold form-label ">Followers</label>
                         </div>
@@ -56,7 +56,7 @@
                             <input type="text" name="followers" class=" form-control col-12" placeholder="Masukan Jumlah Followers">
                         </div>
                     </div> 
-                    <div class=" col-4  cursor-pointer">
+                    <div class=" col-md-4  cursor-pointer">
                         <div class="">
                             <label class="fw-bold form-label ">Tier</label>
                         </div>
@@ -68,7 +68,7 @@
                             <option value="Mega">Mega</option>
                         </select>
                     </div>
-                    <div class=" col-4 ">
+                    <div class=" col-md-4 ">
                         <div class="">
                             <label class="fw-bold form-label ">Ig Photo Feed</label>
                         </div>
@@ -76,7 +76,7 @@
                             <input type="text" name="ig_photo_feed" class=" form-control col-12" placeholder="">
                         </div>  
                     </div> 
-                    <div class=" col-4 ">
+                    <div class=" col-md-4 ">
                         <div class="">
                             <label class="fw-bold form-label ">Ig Photo Feed Carousel</label>
                         </div>
@@ -84,7 +84,7 @@
                             <input type="text" name="ig_Photo_feed_carousel" class=" form-control col-12" placeholder="">
                         </div>  
                     </div> 
-                    <div class=" col-4 ">
+                    <div class=" col-md-4 ">
                         <div class="">
                             <label class="fw-bold form-label ">Ig Story</label>
                         </div>
@@ -92,7 +92,7 @@
                             <input type="text" name="ig_Story" class=" form-control col-12" placeholder="">
                         </div>  
                     </div> 
-                    <div class=" col-4 ">
+                    <div class=" col-md-4 ">
                         <div class="">
                             <label class="fw-bold form-label ">Ig Story With Link</label>
                         </div>
@@ -100,7 +100,7 @@
                             <input type="text" name="ig_story_with_link" class=" form-control col-12" placeholder="">
                         </div>  
                     </div> 
-                    <div class=" col-4 ">
+                    <div class=" col-md-4 ">
                         <div class="">
                             <label class="fw-bold form-label ">Press Release</label>
                         </div>
@@ -108,7 +108,7 @@
                             <input type="text" name="press_release" class=" form-control col-12" placeholder="">
                         </div>  
                     </div> 
-                    <div class=" col-4  cursor-pointer">
+                    <div class=" col-md-4 ">
                         <div class="">
                             <label class="fw-bold form-label ">Pilih Category</label>
                         </div>
@@ -119,7 +119,7 @@
                             <option value="tourism">tourism</option>
                         </select>
                     </div>
-                    <div class=" col-4 ">
+                    <div class=" col-md-4 ">
                         <div class="">
                             <label class="fw-bold form-label ">Contact Person</label>
                         </div>
@@ -127,7 +127,7 @@
                             <input type="number" name="contact_person" class=" form-control" placeholder="+62 8xxxxxxxxxx">
                         </div>  
                     </div>      
-                    <div class=" col-4 ">
+                    <div class=" col-md-4 ">
                         <div class="">
                             <label class="fw-bold form-label">Notes</label>
                         </div>
