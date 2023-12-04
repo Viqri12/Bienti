@@ -11,15 +11,15 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     @endif
-<main class="form-signin bg-white shadow col-6 mx-auto mt-5 rounded-4 p-2">
-    <form action="{{ route('login')}}" method="POST">
+<main class="form-signin bg-white shadow col-md-6 col-sm-5 mx-auto mt-5 rounded-4">
+    <form action="{{ route('login')}}" class="p-4" method="POST">
         @csrf
-        <div class=" col-3 mx-auto mt-2">
+        <div class=" col-md-3 mx-auto mt-2">
           <a href="{{ route('landingpage')}}">
               <img src="{{ asset('assets/images/icon/Logo-Bienti-03.png')}}" class="img-fluid" alt="">
           </a>
         </div>
-      <div class="col-5 mx-auto">
+      <div class="col-md-5 mx-auto">
         <div>
             <label for="email" class="fw-semibold">Email</label>
         </div>
@@ -30,7 +30,7 @@
             </div>
         @enderror
       </div>
-      <div class="col-5 mx-auto">
+      <div class="col-md-5 mx-auto">
         <div>
             <label for="password" class="fw-semibold mt-2">Password</label>
         </div>
@@ -41,7 +41,7 @@
         </div>
         @enderror
       </div>
-      <div class="checkbox mb-3 mt-3 col-5 mx-auto">
+      <div class="checkbox mb-3 mt-3 col-md-5 mx-auto">
         <button class="w-100 btn btn-lg btn-primary bg-primary" type="submit">Login</button>
       </div>
     </form>
