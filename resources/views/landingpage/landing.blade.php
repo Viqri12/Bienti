@@ -1,7 +1,11 @@
+
 @extends('layouts.LP.app')
 @section('content')
-@include('layouts.LP.navbar')
-        <div class="">
+<div class="d-flex align-items-center justify-content-center mt-5">
+    <img src="{{ asset('assets/images/icon/Unauthorized-02.png') }}" width="400" height="400" class="img-fluid" style="" alt="">
+</div>
+{{-- @include('layouts.LP.navbar') --}}
+        {{-- <div class="">
             <section class="main-slider">
                 <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
         "effect": "fade",
@@ -185,7 +189,7 @@
                         <li class="counter-one__shape wow fadeInUp" data-wow-delay="500ms"></li>
                     </ul>
                 </div>
-            </section>
+            </section> --}}
                 {{-- <section class="we-change">
                     <div class="container">
                         <div class="row">
@@ -252,7 +256,7 @@
                         </div>
                     </div>
                 </section> --}}
-            <section class="we-make">
+            {{-- <section class="we-make">
                 <div class="we-make-bg" style="background-image: url(assets/images/backgrounds/we-make-bg.jpg)"></div>
                 <div class="container">
                     <div class="row">
@@ -456,7 +460,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         {{-- <section class="testimonial-one">
             <div class="container">
                 <div class="row">
@@ -526,7 +530,7 @@
                 </div>
             </div>
         </section> --}}
-        <section class="two-boxes mt-5">
+        {{-- <section class="two-boxes mt-5">
             <div class="container">
                 <div class="">
                     <div class="row">
@@ -844,9 +848,9 @@
                 </div>
             </div>
         </section>
-    </div>
+    </div> --}}
 
 
 
-@include('layouts.LP.footer')
+{{-- @include('layouts.LP.footer') --}}
 @endsection
