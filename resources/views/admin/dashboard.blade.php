@@ -1,7 +1,7 @@
 @extends('layouts.zeis.app')
 @section('content')
         <div class="col-md-12 mb-2">
-            <div class="mt-3  d-lg-flex align-items-center">
+            <div class="mt-3  d-flex align-items-center">
                 <h5 class="fw-bold text-dark"  style="font-size: 36px;">Hello,{{ auth()->user()->name }}</h5>               
                 <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <path d="M0 36.52H36V0.52H0V36.52Z" fill="url(#pattern0)"/>
