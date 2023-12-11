@@ -151,6 +151,24 @@
                     </a>
                 </div>
             </div>
+            <div class="col-md-4 ">
+                <div class="card" style="background: #f18aca;">
+                    <a>
+                        <div class="card-body">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="">
+                                    {{-- <img src="{{ asset('assets/images/icon/media.svg')}}" class="" alt=""> --}}
+                                    <div class="text-white fw-bold text-center" style="font-size: 12px;">TOTAL KESELURUHAN ISI TABLE </div>
+                                </div>
+                                <div>
+                                    <div class=" fw-bold text-white" style="font-size: 32px">{{ number_format($totalinput,0,',','.') }}</div>
+                                    <div class="text-white" style="font-size: 15px;">Database</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
 
         <div class="container-fluid">

@@ -30,6 +30,7 @@ class DashboardController extends Controller
         $table = 'Dashboard';
         $influencer = influencer::with('sosialmedia','category_1','tier')->latest()->get();
         $sosial = SosialMedia::all();
+        $totalinput = 0;
         $allCount = [];
         foreach ($sosial as $key => $value) {
             $allCount[$value->name] = influencer::whereHas('sosialmedia',function($q) use ($value){
@@ -41,8 +42,12 @@ class DashboardController extends Controller
         $countComunity = Comunity::count();
         $countMedia = Media::count();
         $countTalent = Talent::count();
+        $totalinput +=  $allCount[$value->name];
+        $totalinput += $countComunity;
+        $totalinput += $countMedia;
+        $totalinput += $countTalent;
         // return $influencer;
-        return view('admin.dashboard', compact('table','influencer','sosial','allCount','countComunity','countMedia','countTalent'));
+        return view('admin.dashboard', compact('table','influencer','sosial','allCount','countComunity','countMedia','countTalent','totalinput'));
     }
 
     //TAMBAH INFLUENCER
