@@ -1,5 +1,6 @@
 <div class="fixed-navbar">
 	<div class="pull-left">
+		<button type="button" class="menu-mobile-button bg-transparent glyphicon glyphicon-menu-hamburger js__menu_mobile"></button>
 		<h1 class="page-title">{{ $table }}</h1>
 		<!-- /.page-title -->
 	</div>
