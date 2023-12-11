@@ -33,16 +33,15 @@ class DashboardController extends Controller
         $totalinput = 0;
         $allCount = [];
         foreach ($sosial as $key => $value) {
-            $allCount[$value->name] = influencer::whereHas('sosialmedia',function($q) use ($value){
-                $q->where('sosial_media_id',$value->id);
-               })->with(['sosialmedia' => function($q) use ($value){
+            $allCount[$value->name] = influencer::with(['sosialmedia' => function($q) use ($value){
                     $q->where('sosial_media_id',$value->id);
                 },'tier'])->count(); 
         }
+        // return $allCount;
         $countComunity = Comunity::count();
         $countMedia = Media::count();
         $countTalent = Talent::count();
-        $totalinput +=  $allCount;
+        $totalinput +=  $allCount[$value->name];
         $totalinput += $countComunity;
         $totalinput += $countMedia;
         $totalinput += $countTalent;
