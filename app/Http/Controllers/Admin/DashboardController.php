@@ -42,7 +42,7 @@ class DashboardController extends Controller
         $countComunity = Comunity::count();
         $countMedia = Media::count();
         $countTalent = Talent::count();
-        $totalinput +=  $allCount[$value->name];
+        $totalinput +=  $allCount;
         $totalinput += $countComunity;
         $totalinput += $countMedia;
         $totalinput += $countTalent;
