@@ -1,11 +1,11 @@
 
 @extends('layouts.LP.app')
 @section('content')
-<div class="d-flex align-items-center justify-content-center mt-5">
+{{-- <div class="d-flex align-items-center justify-content-center mt-5">
     <img src="{{ asset('assets/images/icon/Unauthorized-02.png') }}" width="400" height="400" class="img-fluid" style="" alt="">
-</div>
-{{-- @include('layouts.LP.navbar') --}}
-        {{-- <div class="">
+</div> --}}
+@include('layouts.LP.navbar')
+        <div class="">
             <section class="main-slider">
                 <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
         "effect": "fade",
@@ -24,14 +24,14 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="image-layer"
-                                style="background-image: url(assets/images/backgrounds/fotoheader2.jpg);">
+                              style="background-image: url(assets/images/backgrounds/fotoheader.jpg);">
                             </div>
     
-                            <div class="image-layer-overlay"></div>
-                            <div class="main-slider-shape-1"></div>
-                            <div class="main-slider-shape-2"></div>
-                            <div class="main-slider-shape-3"></div>
-                            <div class="main-slider-shape-4"></div>
+                            {{-- <div class="image-layer-overlay"></div> --}}
+                            {{-- <div class="main-slider-shape-1"></div>
+                            <div class="main-slider-shape-2"></div> --}}
+                            {{-- <div class="main-slider-shape-3"></div>
+                            <div class="main-slider-shape-4"></div> --}}
                             <!-- /.image-layer -->
                             <div class="container">
                                 <div class="row">
@@ -50,17 +50,17 @@
                                 style="background-image: url(assets/images/backgrounds/fotoheader.jpg);">
                             </div>
     
-                            <div class="image-layer-overlay"></div>
+                            {{-- <div class="image-layer-overlay"></div>
                             <div class="main-slider-shape-1"></div>
                             <div class="main-slider-shape-2"></div>
                             <div class="main-slider-shape-3"></div>
-                            <div class="main-slider-shape-4"></div>
+                            <div class="main-slider-shape-4"></div> --}}
                             <!-- /.image-layer -->
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="main-slider__content">
-                                            <p>welcome to Moniz Web agency</p>
+                                            <p>welcome to bienti media Web agency</p>
                                             <h2>BUILD<br>ENGAGEMENT</h2>
                                             <a href="contact.html" class="thm-btn"><span>Free consultation</span></a>
                                         </div>
@@ -70,20 +70,20 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="image-layer"
-                                style="background-image: url(assets/images/backgrounds/fotoheader3.jpg);">
+                              style="background-image: url(assets/images/backgrounds/fotoheader.jpg);">
                             </div>
     
-                            <div class="image-layer-overlay"></div>
+                            {{-- <div class="image-layer-overlay"></div>
                             <div class="main-slider-shape-1"></div>
                             <div class="main-slider-shape-2"></div>
                             <div class="main-slider-shape-3"></div>
-                            <div class="main-slider-shape-4"></div>
+                            <div class="main-slider-shape-4"></div> --}}
                             <!-- /.image-layer -->
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="main-slider__content">
-                                            <p>welcome to Moniz Web agency</p>
+                                            <p>welcome to bienti media Web agency</p>
                                             <h2>Smart web <br> design agency</h2>
                                             <a href="contact.html" class="thm-btn"><span>Free consultation</span></a>
                                         </div>
@@ -103,7 +103,7 @@
                                     class="icon-right-arrow"></i>
                             </div>
                         </div>
-                        <div class="swiper-pagination" id="main-slider-pagination"></div>
+                        {{--  <div class="swiper-pagination" id="main-slider-pagination"></div> --}}
                     </div>
                 </div>
             </section>
@@ -189,8 +189,8 @@
                         <li class="counter-one__shape wow fadeInUp" data-wow-delay="500ms"></li>
                     </ul>
                 </div>
-            </section> --}}
-                {{-- <section class="we-change">
+            </section>
+                 <section class="we-change">
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-6">
@@ -255,8 +255,8 @@
                             </div>
                         </div>
                     </div>
-                </section> --}}
-            {{-- <section class="we-make">
+                </section>
+            <section class="we-make">
                 <div class="we-make-bg" style="background-image: url(assets/images/backgrounds/we-make-bg.jpg)"></div>
                 <div class="container">
                     <div class="row">
@@ -460,7 +460,7 @@
                     </div>
                 </div>
             </div>
-        </section> --}}
+        </section>
         {{-- <section class="testimonial-one">
             <div class="container">
                 <div class="row">
@@ -530,7 +530,7 @@
                 </div>
             </div>
         </section> --}}
-        {{-- <section class="two-boxes mt-5">
+        <section class="two-boxes mt-5">
             <div class="container">
                 <div class="">
                     <div class="row">
@@ -848,9 +848,9 @@
                 </div>
             </div>
         </section>
-    </div> --}}
+    </div>
 
 
 
-{{-- @include('layouts.LP.footer') --}}
+@include('layouts.LP.footer')
 @endsection
