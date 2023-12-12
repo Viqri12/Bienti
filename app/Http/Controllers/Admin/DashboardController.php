@@ -29,23 +29,21 @@ class DashboardController extends Controller
     {
         $table = 'Dashboard';
         $influencer = influencer::with('sosialmedia','category_1','tier')->latest()->get();
-        $sosial = SosialMedia::all();
         $totalinput = 0;
-        $allCount = [];
+        $sosial = SosialMedia::latest()->get();
+        $allCount = [];   
         foreach ($sosial as $key => $value) {
-            $allCount[$value->name] = influencer::with(['sosialmedia' => function($q) use ($value){
-                    $q->where('sosial_media_id',$value->id);
-                },'tier'])->count(); 
-        }
-        // return $allCount;
+            $getInfluencer = socialmediaHasInfluencer::where('sosial_media_id',$value->id)->count();
+            $allCount[$value->name] = $getInfluencer; 
+            $totalinput += $getInfluencer;
+        }    
         $countComunity = Comunity::count();
         $countMedia = Media::count();
-        $countTalent = Talent::count();
-        $totalinput +=  $allCount[$value->name];
+        $countTalent = Talent::count(); 
         $totalinput += $countComunity;
         $totalinput += $countMedia;
         $totalinput += $countTalent;
-        // return $influencer;
+        // return $totalinput;
         return view('admin.dashboard', compact('table','influencer','sosial','allCount','countComunity','countMedia','countTalent','totalinput'));
     }
 
