@@ -32,18 +32,23 @@ class DashboardController extends Controller
         $totalinput = 0;
         $sosial = SosialMedia::latest()->get();
         $allCount = [];   
+        // return $sosial;
         foreach ($sosial as $key => $value) {
+               // return $value;
             $getInfluencer = socialmediaHasInfluencer::where('sosial_media_id',$value->id)->count();
             $allCount[$value->name] = $getInfluencer; 
             $totalinput += $getInfluencer;
-        }    
+        }   
+        // return socialmediaHasInfluencer::where('sosial_media_id',)->get();
+        // return $allCount;  
         $countComunity = Comunity::count();
         $countMedia = Media::count();
-        $countTalent = Talent::count(); 
+        $countTalent = Talent::count(); //salah na anu $totalinput lin
+        // $totalinput +=  $allCount[$value->name]; // 
         $totalinput += $countComunity;
         $totalinput += $countMedia;
         $totalinput += $countTalent;
-        // return $totalinput;
+        return $totalinput;
         return view('admin.dashboard', compact('table','influencer','sosial','allCount','countComunity','countMedia','countTalent','totalinput'));
     }
 
