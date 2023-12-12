@@ -48,7 +48,7 @@ class DashboardController extends Controller
         $totalinput += $countComunity;
         $totalinput += $countMedia;
         $totalinput += $countTalent;
-        return $totalinput;
+        // return $totalinput;  
         return view('admin.dashboard', compact('table','influencer','sosial','allCount','countComunity','countMedia','countTalent','totalinput'));
     }
 
