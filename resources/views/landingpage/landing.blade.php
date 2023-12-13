@@ -5,8 +5,8 @@
     <img src="{{ asset('assets/images/icon/Unauthorized-02.png') }}" width="400" height="400" class="img-fluid" style="" alt="">
 </div>
 {{-- @include('layouts.LP.navbar')
-        <div class="">
-            <section class="main-slider">
+        <div class=""> --}}
+            {{-- <section class="main-slider">
                 <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
         "effect": "fade",
          "pagination": {
@@ -23,17 +23,19 @@
         }}'>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="image-layer"
-                              style="background-image: url(assets/images/backgrounds/fotoheader.jpg);">
-                            </div> --}}
+                            <div class="image-layer img-fluid">
+                                <video src="">
+                                    <source src="{{ asset('assets/images/backgrounds/video-one-bg.MP4 ') }}" type="video/mp4">
+                                </video>
+                            </div>
     
-                            {{-- <div class="image-layer-overlay"></div> --}}
-                            {{-- <div class="main-slider-shape-1"></div>
-                            <div class="main-slider-shape-2"></div> --}}
-                            {{-- <div class="main-slider-shape-3"></div>
-                            <div class="main-slider-shape-4"></div> --}}
+                            <div class="image-layer-overlay"></div>
+                            <div class="main-slider-shape-1"></div>
+                            <div class="main-slider-shape-2"></div>
+                            <div class="main-slider-shape-3"></div>
+                            <div class="main-slider-shape-4"></div>
                             <!-- /.image-layer -->
-                            {{-- <div class="container">
+                            <div class="container">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="main-slider__content">
@@ -43,8 +45,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div> --}}
-                        {{-- </div>
+                            </div>
+                        </div>
                         <div class="swiper-slide">
                             <div class="image-layer"
                                 style="background-image: url(assets/images/backgrounds/fotoheader.jpg);">
@@ -54,9 +56,9 @@
                             <div class="main-slider-shape-1"></div>
                             <div class="main-slider-shape-2"></div>
                             <div class="main-slider-shape-3"></div>
-                            <div class="main-slider-shape-4"></div> --}}
+                            <div class="main-slider-shape-4"></div>
                             <!-- /.image-layer -->
-                            {{-- <div class="container">
+                            <div class="container">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="main-slider__content">
@@ -67,10 +69,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> --}}
-                        {{-- <div class="swiper-slide">
+                        </div>
+                        <div class="swiper-slide">
                             <div class="image-layer"
-                              style="background-image: url(assets/images/backgrounds/fotoheader.jpg);">
+                            style="background-image: url(assets/images/backgrounds/fotoheader.jpg);">
                             </div>
     
                             <div class="image-layer-overlay"></div>
@@ -91,9 +93,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div> --}}
+                    </div>
                     <!-- If we need navigation buttons -->
-                    {{-- <div class="slider-bottom-box clearfix">
+                    <div class="slider-bottom-box clearfix">
     
                         <div class="main-slider__nav">
                             <div class="swiper-button-prev" id="main-slider__swiper-button-next"><i
@@ -103,11 +105,11 @@
                                     class="icon-right-arrow"></i>
                             </div>
                         </div>
-                         <div class="swiper-pagination" id="main-slider-pagination"></div>
-                    </div>
+                        {{--  <div class="swiper-pagination" id="main-slider-pagination"></div> --}}
+                    {{-- </div>
                 </div>
-            </section> --}}
-            {{-- <section class="welcome-one">
+            </section>
+            <section class="welcome-one">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-6">
@@ -154,8 +156,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="counters-one">
+            </section> --}} 
+            {{-- <section class="counters-one">
                 <div class="container">
                     <ul class="counters-one__box list-unstyled">
                         <li class="counter-one__single wow fadeInUp" data-wow-delay="100ms">

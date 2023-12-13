@@ -29,6 +29,7 @@ class SocialMediaSeeder extends Seeder
                 'Ig photo feed',
                 'Ig Photo feed carousel',
                 'Ig Story',
+                'Ig Story with link',
                 'Ig Reels',
                 'Ig Live',
                 'Attending Event',

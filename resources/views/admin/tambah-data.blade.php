@@ -87,7 +87,7 @@
                             <textarea id="deskripsi" name="notes" class="form-control" name="deskripsi"  cols="48"></textarea>
                         </div> 
                     </div> 
-                <div class="d-flex justify-content-end col-md-4" style="">
+                <div class="d-flex justify-content-end col-md-12" style="">
                     <button  class="bg-transparent border-0">
                         <img src="{{ asset('assets-baru/images/img.svg')}}" alt="">
                     </button>
