@@ -1,11 +1,11 @@
 @extends('layouts.LP.app')
 @section('content')
-{{-- <div class="mx-auto text-center mt-5">
-    <img src="{{ asset('assets/images/icon/Unauthorized-02.png') }}" width="400" height="400" class="img-fluid">
+<div class="mx-auto text-center mt-5">
+    {{-- <img src="{{ asset('assets/images/icon/Unauthorized-02.png') }}" width="400" height="400" class="img-fluid"> --}}
     <div class="fw-bold" style="font-size: 50px">404 - Page Not Found</div>
     <p>The requested page could not be found.</p>
-</div> --}}
-@include('layouts.LP.navbar')
+</div>
+{{-- @include('layouts.LP.navbar')
         <div class="">
             <section class="main-slider">
                 <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
@@ -46,7 +46,7 @@
                                   </div>
                                 </div>
                             </div>
-                        </section>
+                        </section> --}}
                         {{-- <div class="swiper-slide">
                             <div class="image-layer img-fluid">
                                 <video src="">
@@ -129,9 +129,9 @@
                                 class="icon-right-arrow"></i>
                             </div>
                         </div>
-                         <div class="swiper-pagination" id="main-slider-pagination"></div>
-                    </div> --}}
-                 </div> 
+                        {{--  <div class="swiper-pagination" id="main-slider-pagination"></div> --}}
+                    {{-- </div> --}}
+                {{-- </div>
             </section>
             <section class="welcome-one">
                 <div class="container">
@@ -421,7 +421,45 @@
                 </div>
             </div>
         </section>
-        <section class="video-one mt-4">
+        <section class="two-boxes mt-5">
+            <div class="container">
+                <div class="">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 mb-2">
+                            <div class="two-boxes__single rounded-2 two-boxes__single-one">
+                                <div class="two-boxes__content">
+                                    <div class="two-boxes__icon">
+                                        <span class="icon-web-design"></span>
+                                    </div>
+                                    <div class="two-boxes__text">
+                                        <p>We’re committed to create <br> a change that matters</p>
+                                    </div>
+                                </div>
+                                <div class="two-boxes__arrow">
+                                    <a href="contact.html"><span class="icon-right-arrow"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="two-boxes__single rounded-2 two-boxes__single-two">
+                                <div class="two-boxes__content">
+                                    <div class="two-boxes__icon">
+                                        <span class="icon-graphic-design"></span>
+                                    </div>
+                                    <div class="two-boxes__text">
+                                        <p>We’re committed to create <br> a change that matters</p>
+                                    </div>
+                                </div>
+                                <div class="two-boxes__arrow">
+                                    <a href="about.html"><span class="icon-right-arrow"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="video-one">
             <div class="video-one-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
                 style="background-image: url(assets/images/backgrounds/video-one-bg.jpg)"></div>
             <div class="container">
@@ -701,7 +739,7 @@
                 </div>
             </div>
         </section>
-    </div>
+    </div> --}}
 
 {{-- <script>
     //according to loftblog tut
@@ -751,5 +789,5 @@
 </script> --}}
 
 
-@include('layouts.LP.footer')
+{{-- @include('layouts.LP.footer') --}}
 @endsection
