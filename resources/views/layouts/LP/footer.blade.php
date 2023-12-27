@@ -71,7 +71,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="site-footer-bottom__inner">
-                        <p class="site-footer-bottom__copy-right">© Copyright 2021 by <a
+                        <p class="site-footer-bottom__copy-right">© Copyright 2023 by <a
                                 href="#">bienti.id</a></p>
                     </div>
                 </div>

@@ -1,12 +1,13 @@
-
 @extends('layouts.LP.app')
 @section('content')
-<div class="d-flex align-items-center justify-content-center mt-5">
-    <img src="{{ asset('assets/images/icon/Unauthorized-02.png') }}" width="400" height="400" class="img-fluid" style="" alt="">
+<div class="col-8 mx-auto text-center mt-5">
+    {{-- <img src="{{ asset('assets/images/icon/Unauthorized-02.png') }}" width="400" height="400" class="img-fluid"> --}}
+    <div class="fw-bold" style="font-size: 50px">404 - Page Not Found</div>
+    <p>The requested page could not be found.</p>
 </div>
 {{-- @include('layouts.LP.navbar')
-        <div class=""> --}}
-            {{-- <section class="main-slider">
+        <div class="">
+            <section class="main-slider">
                 <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
         "effect": "fade",
          "pagination": {
@@ -22,7 +23,31 @@
             "delay": 5000
         }}'>
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <section class="" id="" data-section="" style="" >
+                            <div class="">
+                                <video autoplay muted loop  class=""  style="">
+                                    <source src="./assets/videolow.mp4"  type="video/mp4" />
+                                </video>
+                            </div>
+                      
+                            <div class="video-overlay header-text">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <div class=" text-white">
+                                    <div>Welcome to bienti media crative agency</div>
+                                    <div style="font-size: 30px;" class="fw-bold">A DIGITAL AGENCY <br>WITH A PASSION FOR MARKETING</div>
+                                    <div>Let's Collaborate</div>
+                                    <div class="main-button-yellow">
+                                        <div class="scroll-to-section"> <a href="contact.html"><span>Let's Collaborate</span></a></div>
+                                    </div>
+                                </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </section> --}}
+                        {{-- <div class="swiper-slide">
                             <div class="image-layer img-fluid">
                                 <video src="">
                                     <source src="{{ asset('assets/images/backgrounds/video-one-bg.MP4 ') }}" type="video/mp4">
@@ -46,8 +71,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
+                        </div> --}}
+                        {{-- <div class="swiper-slide">
                             <div class="image-layer"
                                 style="background-image: url(assets/images/backgrounds/fotoheader.jpg);">
                             </div>
@@ -69,8 +94,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
+                        </div> --}}
+                        {{-- <div class="swiper-slide">
                             <div class="image-layer"
                             style="background-image: url(assets/images/backgrounds/fotoheader.jpg);">
                             </div>
@@ -92,22 +117,21 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </div> --}}
+                    {{-- </div> --}}
                     <!-- If we need navigation buttons -->
-                    <div class="slider-bottom-box clearfix">
-    
+                    {{-- <div class="slider-bottom-box clearfix">
                         <div class="main-slider__nav">
                             <div class="swiper-button-prev" id="main-slider__swiper-button-next"><i
-                                    class="icon-right-arrow icon-left-arrow"></i>
+                                class="icon-right-arrow icon-left-arrow"></i>
                             </div>
                             <div class="swiper-button-next" id="main-slider__swiper-button-prev"><i
-                                    class="icon-right-arrow"></i>
+                                class="icon-right-arrow"></i>
                             </div>
                         </div>
                         {{--  <div class="swiper-pagination" id="main-slider-pagination"></div> --}}
-                    {{-- </div>
-                </div>
+                    {{-- </div> --}}
+                {{-- </div>
             </section>
             <section class="welcome-one">
                 <div class="container">
@@ -156,8 +180,8 @@
                         </div>
                     </div>
                 </div>
-            </section> --}} 
-            {{-- <section class="counters-one">
+            </section>
+            <section class="counters-one">
                 <div class="container">
                     <ul class="counters-one__box list-unstyled">
                         <li class="counter-one__single wow fadeInUp" data-wow-delay="100ms">
@@ -192,72 +216,6 @@
                     </ul>
                 </div>
             </section>
-                 <section class="we-change">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="we-change__left-faqs">
-                                    <div class="section-title text-left">
-                                        <span class="section-title__tagline">Frequently asked questions</span>
-                                        <h2 class="section-title__title">Professional & Experienced Team</h2>
-                                    </div>
-                                    <div class="we-change__faqs">
-                                        <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
-                                            <div class="accrodion active">
-                                                <div class="accrodion-title">
-                                                    <h4>Few resons why you should choose us</h4>
-                                                </div>
-                                                <div class="accrodion-content">
-                                                    <div class="inner">
-                                                        <p>Suspendisse finibus urna mauris, vitae consequat quam vel. Vestibulum
-                                                            leo ligula, vitae commodo nisl.</p>
-                                                    </div><!-- /.inner -->
-                                                </div>
-                                            </div>
-                                            <div class="accrodion">
-                                                <div class="accrodion-title">
-                                                    <h4>Few resons why you should choose us</h4>
-                                                </div>
-                                                <div class="accrodion-content">
-                                                    <div class="inner">
-                                                        <p>Suspendisse finibus urna mauris, vitae consequat quam vel. Vestibulum
-                                                            leo ligula, vitae commodo nisl.</p>
-                                                    </div><!-- /.inner -->
-                                                </div>
-                                            </div>
-                                            <div class="accrodion last-chiled">
-                                                <div class="accrodion-title">
-                                                    <h4>Few resons why you should choose us</h4>
-                                                </div>
-                                                <div class="accrodion-content">
-                                                    <div class="inner">
-                                                        <p>Suspendisse finibus urna mauris, vitae consequat quam vel. Vestibulum
-                                                            leo ligula, vitae commodo nisl.</p>
-                                                    </div><!-- /.inner -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 d-flex align-items-center">
-                                <div class="we-change__right">
-                                    <div class="we-change__right-img rounded-3">
-                                        <img src="assets/images/resources/we-change-right-img-1.jpg" alt="">
-                                        <div class="we-change__agency border">
-                                            <div class="we-change__agency-icon">
-                                                <span class="icon-development"></span>
-                                            </div>
-                                            <div class="we-change__agency-text">
-                                                <h3>Our agency is one of the most <br> successful agency.</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             <section class="we-make">
                 <div class="we-make-bg" style="background-image: url(assets/images/backgrounds/we-make-bg.jpg)"></div>
                 <div class="container">
@@ -462,77 +420,8 @@
                     </div>
                 </div>
             </div>
-        </section> --}}
-        {{-- <section class="testimonial-one">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="testimonial-one__left">
-                            <div class="section-title text-left">
-                                <span class="section-title__tagline">Customer feedback</span>
-                                <h2 class="section-title__title">What they are talking about moniz?</h2>
-                            </div>
-                            <div class="testimonial-one__btn-box">
-                                <a href="about.html" class="thm-btn testimonial-one__btn"><span>All feedbacks</span></a>
-                                <div class="testimonial-one__btn-shape"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-8 col-lg-7">
-                        <div class="testimonial-one__slider">
-                            <div class="testimonials-one__main-content">
-                                <div class="swiper-container" id="testimonials-one__carousel">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="testimonial-one__conent-box">
-                                                <p class="testimonial-one__text">This is due to their excellent service,
-                                                    competitive pricing and customer support. It’s throughly refresing
-                                                    to
-                                                    get such a personal touch. Duis aute lorem ipsum is simply.</p>
-                                                <div class="testimonial-one__client-details">
-                                                    <h4 class="testimonial-one__client-name">Aleesha brown</h4>
-                                                    <span class="testimonial-one__clinet-title">Satisfied
-                                                        customers</span>
-                                                </div>
-                                            </div>
-                                        </div><!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <div class="testimonial-one__conent-box">
-                                                <p class="testimonial-one__text">This is due to their excellent service,
-                                                    competitive pricing and customer support. It’s throughly refresing
-                                                    to
-                                                    get such a personal touch. Duis aute lorem ipsum is simply.</p>
-                                                <div class="testimonial-one__client-details">
-                                                    <h4 class="testimonial-one__client-name">Aleesha brown</h4>
-                                                    <span class="testimonial-one__clinet-title">Satisfied
-                                                        customers</span>
-                                                </div>
-                                            </div>
-                                        </div><!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <div class="testimonial-one__conent-box">
-                                                <p class="testimonial-one__text">This is due to their excellent service,
-                                                    competitive pricing and customer support. It’s throughly refresing
-                                                    to
-                                                    get such a personal touch. Duis aute lorem ipsum is simply.</p>
-                                                <div class="testimonial-one__client-details">
-                                                    <h4 class="testimonial-one__client-name">Aleesha brown</h4>
-                                                    <span class="testimonial-one__clinet-title">Satisfied
-                                                        customers</span>
-                                                </div>
-                                            </div>
-                                        </div><!-- /.swiper-slide -->
-                                    </div><!-- /.swiper-wrapper -->
-                                    <div id="testimonials-one__carousel-pagination"></div>
-                                    <!-- /#testimonials-one__carousel-pagination -->
-                                </div><!-- /#testimonials-one__thumb.swiper-container -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> --}}
-        {{-- <section class="two-boxes mt-5">
+        </section>
+        <section class="two-boxes mt-5">
             <div class="container">
                 <div class="">
                     <div class="row">
@@ -850,9 +739,55 @@
                 </div>
             </div>
         </section>
-    </div>
+    </div> --}}
+
+{{-- <script>
+    //according to loftblog tut
+    $('.nav li:first').addClass('active');
+
+    var showSection = function showSection(section, isAnimate) {
+      var
+      direction = section.replace(/#/, ''),
+      reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+      reqSectionPos = reqSection.offset().top - 0;
+
+      if (isAnimate) {
+        $('body, html').animate({
+          scrollTop: reqSectionPos },
+        800);
+      } else {
+        $('body, html').scrollTop(reqSectionPos);
+      }
+
+    };
+
+    var checkSection = function checkSection() {
+      $('.section').each(function () {
+        var
+        $this = $(this),
+        topEdge = $this.offset().top - 80,
+        bottomEdge = topEdge + $this.height(),
+        wScroll = $(window).scrollTop();
+        if (topEdge < wScroll && bottomEdge > wScroll) {
+          var
+          currentId = $this.data('section'),
+          reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+          reqLink.closest('li').addClass('active').
+          siblings().removeClass('active');
+        }
+      });
+    };
+
+    $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+      e.preventDefault();
+      showSection($(this).attr('href'), true);
+    });
+
+    $(window).scroll(function () {
+      checkSection();
+    });
+</script> --}}
 
 
-
-@include('layouts.LP.footer') --}}
+{{-- @include('layouts.LP.footer') --}}
 @endsection

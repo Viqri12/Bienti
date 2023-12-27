@@ -1,20 +1,20 @@
 <header class="main-header clearfix">
-    <nav class="main-menu clearfix">
-        <div class="main-menu-wrapper clearfix">
-            <div class="main-menu-wrapper__left clearfix">
+    <nav class="main-menu clearfix d-flex align-items-center justify-content-between col-12">
+        {{-- <div class="main-menu-wrapper clearfix  col-12"> --}}
+            <div class=" d-flex align-items-center">
                 <div class="main-menu-wrapper__logo">
                     <a href="index.html"><img src="assets/images/resources/logo.png" alt=""></a>
                 </div>
                 <div class="main-menu-wrapper__search-box">
                     <a href="#" class="main-menu-wrapper__search search-toggler icon-magnifying-glass"></a>
                 </div>
-                <div class="main-menu-wrapper__social">
+                <div class="main-menu-wrapper__social col-4">
                     <a href="https://twitter.com/BientiMedia"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=100070769754833" class="clr-fb"><i class="fab fa-facebook"></i></a>
                     <a href="https://www.instagram.com/bienti.id/" class="clr-ins"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-            <div class="main-menu-wrapper__main-menu">
+            <div class="main-menu-wrapper__main-menu ">
                 <a href="#" class="mobile-nav__toggler">
                     <span></span>
                 </a>
@@ -125,6 +125,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        {{-- </div> --}}
     </nav>
 </header>

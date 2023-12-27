@@ -64,7 +64,14 @@ class DashboardController extends Controller
 
     public function influencerPost(Request $request)
     {
-          // return $request;
+        //   return $request;
+          $cek = influencer::where('name', $request->name)->first();
+        //   return $cek;
+
+          if($cek){
+            Alert::error('Gagal', 'Influencer Sudah Terdaftar');
+            return back();
+          }
         //   return gettype($request->category[0]);
           $create = influencer::create([
             'name' => $request->name,   
