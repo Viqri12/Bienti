@@ -1,6 +1,6 @@
 @extends('layouts.LP.app')
 @section('content')
-<div class="col-8 mx-auto text-center mt-5">
+<div class="mx-auto text-center mt-5">
     {{-- <img src="{{ asset('assets/images/icon/Unauthorized-02.png') }}" width="400" height="400" class="img-fluid"> --}}
     <div class="fw-bold" style="font-size: 50px">404 - Page Not Found</div>
     <p>The requested page could not be found.</p>
