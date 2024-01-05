@@ -21,10 +21,10 @@
                                                 <th data-field="phone" data-editable="true" class="text-center" style="font-size: 12px;">Instagram Link</th>
                                                 <th data-field="Followers" data-editable="true" class="text-center" style="font-size: 12px;">Followers</th>
                                                 <th data-field="email" data-editable="true" class="text-center" style="font-size: 12px;">Tier</th>
-                                                <th data-field="complete" class="text-center" style="font-size: 12px;">Ig Photo Feed</th>
-                                                <th data-field="Ig_Photo " class="text-center" style="font-size: 12px;">Ig Photo Feed Carousel</th>
-                                                <th data-field="Feed_Carousel" class="text-center" style="font-size: 12px;">Ig Story</th>
-                                                <th data-field="Story" class="text-center" style="font-size: 12px;">Ig Story With Link</th>
+                                                <th data-field="complete" class="text-center" style="font-size: 12px;">IG Photo Feed</th>
+                                                <th data-field="Ig_Photo " class="text-center" style="font-size: 12px;">IG Photo Feed Carousel</th>
+                                                <th data-field="Feed_Carousel" class="text-center" style="font-size: 12px;">IG Story</th>
+                                                <th data-field="Story" class="text-center" style="font-size: 12px;">IG Story With Link</th>
                                                 <th data-field="Reels" class="text-center" style="font-size: 12px;">Press Release</th>
                                                 <th data-field="task" data-editable="true" class="text-center" style="font-size: 12px;">Category</th>
                                                 <th data-field="date" data-editable="true" class="text-center" style="font-size: 12px;">Contact Person</th>
