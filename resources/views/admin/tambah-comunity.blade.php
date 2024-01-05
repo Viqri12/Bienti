@@ -78,7 +78,7 @@
                     </div>
                     <div class=" col-md-4 ">
                         <div class="">
-                            <label class="fw-bold form-label ">Ig Photo Feed</label>
+                            <label class="fw-bold form-label ">IG Photo Feed</label>
                         </div>
                         <div class="">
                             <input type="text" name="ig_photo_feed" class=" form-control col-12" placeholder="">
@@ -86,7 +86,7 @@
                     </div> 
                     <div class=" col-md-4 ">
                         <div class="">
-                            <label class="fw-bold form-label ">Ig Photo Feed Carousel</label>
+                            <label class="fw-bold form-label ">IG Photo Feed Carousel</label>
                         </div>
                         <div class="">
                             <input type="text" name="ig_carousel" class=" form-control col-12" placeholder="">
@@ -94,7 +94,7 @@
                     </div> 
                     <div class=" col-md-4 ">
                         <div class="">
-                            <label class="fw-bold form-label ">Ig Story</label>
+                            <label class="fw-bold form-label ">IG Story</label>
                         </div>
                         <div class="">
                             <input type="text" name="ig_story" class=" form-control col-12" placeholder="">
@@ -102,7 +102,7 @@
                     </div> 
                     <div class=" col-md-4 ">
                         <div class="">  
-                            <label class="fw-bold form-label ">Ig Reels</label>
+                            <label class="fw-bold form-label ">IG Reels</label>
                         </div>
                         <div class="">
                             <input type="text" name="ig_reels" class=" form-control col-12" placeholder="">
@@ -110,7 +110,7 @@
                     </div> 
                     <div class=" col-md-4 ">
                         <div class="">
-                            <label class="fw-bold form-label ">Ig Live</label>
+                            <label class="fw-bold form-label ">IG Live</label>
                         </div>
                         <div class="">
                             <input type="text" name="id_live" class=" form-control col-12" placeholder="">

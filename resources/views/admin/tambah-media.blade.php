@@ -70,7 +70,7 @@
                     </div>
                     <div class=" col-md-4 ">
                         <div class="">
-                            <label class="fw-bold form-label ">Ig Photo Feed</label>
+                            <label class="fw-bold form-label ">IG Photo Feed</label>
                         </div>
                         <div class="">
                             <input type="text" name="ig_photo_feed" class=" form-control col-12" placeholder="">
@@ -78,7 +78,7 @@
                     </div> 
                     <div class=" col-md-4 ">
                         <div class="">
-                            <label class="fw-bold form-label ">Ig Photo Feed Carousel</label>
+                            <label class="fw-bold form-label ">IG Photo Feed Carousel</label>
                         </div>
                         <div class="">
                             <input type="text" name="ig_Photo_feed_carousel" class=" form-control col-12" placeholder="">
@@ -86,7 +86,7 @@
                     </div> 
                     <div class=" col-md-4 ">
                         <div class="">
-                            <label class="fw-bold form-label ">Ig Story</label>
+                            <label class="fw-bold form-label ">IG Story</label>
                         </div>
                         <div class="">
                             <input type="text" name="ig_Story" class=" form-control col-12" placeholder="">
@@ -94,7 +94,7 @@
                     </div> 
                     <div class=" col-md-4 ">
                         <div class="">
-                            <label class="fw-bold form-label ">Ig Story With Link</label>
+                            <label class="fw-bold form-label ">IG Story With Link</label>
                         </div>
                         <div class="">
                             <input type="text" name="ig_story_with_link" class=" form-control col-12" placeholder="">
