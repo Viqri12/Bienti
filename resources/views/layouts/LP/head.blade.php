@@ -1,15 +1,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bienti Media</title>
+    <title>HARSA MANUAL</title>
     <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
-    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="250x250" href="{{ asset('assets/images/icon/logo-harsa-26.png')}}" />
+    <link rel="icon" type="image/png" sizes="50x50" href="{{ asset('assets/images/icon/logo-harsa-26.png')}}" />
+    <link rel="icon" type="image/png" sizes="30x30" href="{{ asset('assets/images/icon/logo-harsa-26.png')}}" />
+    <link rel="manifest" href="{{ asset('assets/images/icon/logo-harsa-26.png')}}" sizes="30x30"/>
     <meta name="description" content="Entox HTML Template For Car Business" />
 
-    <!-- fonts -->
+    <!-- fonts --> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">

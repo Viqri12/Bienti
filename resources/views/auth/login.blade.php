@@ -14,9 +14,9 @@
 <main class="form-signin bg-white shadow col-md-6 col-sm-5 mx-auto mt-5 rounded-4">
     <form action="{{ route('login')}}" class="p-4" method="POST">
         @csrf
-        <div class=" col-md-3 mx-auto mt-2">
+        <div class=" col-md-2 mx-auto">
           <a href="{{ route('landingpage')}}">
-              <img src="{{ asset('assets/images/icon/Logo-Bienti-03.png')}}" class="img-fluid" alt="">
+              <img src="{{ asset('assets/images/icon/logo-harsa-26.png')}}" class="img-fluid" alt="">
           </a>
         </div>
       <div class="col-md-5 mx-auto">

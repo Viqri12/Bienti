@@ -1,10 +1,10 @@
 <head> 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- Primary Meta Tags -->
-<title>Bienti.id</title>
+<title>Harsamanual.id</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="title" content="Marketing Agency">
-<meta name="author" content="Themesberg">
+<meta name="author" content="Themesberg"> 
 <meta name="description" content="We provide services in Digital Marketing | Influencer Marketing | SMM | Events | Campaign |">
 <meta name="keywords" content="bootstrap 5, bootstrap, bootstrap 5 admin dashboard, bootstrap 5 dashboard, bootstrap 5 charts, bootstrap 5 calendar, bootstrap 5 datepicker, bootstrap 5 tables, bootstrap 5 datatable, vanilla js datatable, themesberg, themesberg dashboard, themesberg admin dashboard" />
 <link rel="canonical" href="https://themesberg.com/product/admin-dashboard/volt-premium-bootstrap-5-dashboard">
@@ -24,10 +24,10 @@
 <meta property="twitter:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-pro-bootstrap-5-dashboard/volt-pro-preview.jpg">
 
 <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/images/favicons/apple-touch-icon.png')}}" />
-<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/images/favicons/favicon-32x32.png')}}" />
-<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/images/favicons/favicon-16x16.png')}}" />
-<link rel="manifest" href="{{ asset('assets/img/favicon/site.webmanifest')}}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/images/icon/logo-harsa-26.png')}}" />
+<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/images/icon/logo-harsa-26.png')}}" />
+<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/images/icon/logo-harsa-26.png')}}" />
+<link rel="manifest" href="{{ asset('assets/images/icon/logo-harsa-26.png')}}">
 {{-- <link rel="mask-icon" href="{{ asset('assets/img/favicon/safari-pinned-tab.svg')}}" color="#ffffff"> --}}
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">

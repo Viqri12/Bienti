@@ -438,7 +438,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fruitcake/php-cors.git",
-                "reference": "58571acbaa5f9f462c9c77e911700ac66f446d4e"
+                "reference": "58571acbaa5f9f462c9c77e911700ac66f446d4e" 
             },
             "dist": {
                 "type": "zip",
