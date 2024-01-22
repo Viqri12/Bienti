@@ -16,7 +16,7 @@
         @csrf
         <div class=" col-md-4 mx-auto">
           <a href="{{ route('landingpage')}}">
-              <img src="{{ asset('assets/images/icon/logo-bienti-03.png') }}"  class="img-fluid" alt="">
+              <img src="{{ asset('assets/images/icon/Logo-Bienti-03.png') }}"  class="img-fluid" alt="">
           </a>
         </div>
       <div class="col-md-5 mx-auto">
