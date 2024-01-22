@@ -6,7 +6,9 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>Login</title>
-
+        <link rel="apple-touch-icon" sizes="250x250" href="" />
+        <link rel="icon" type="image/png" sizes="" href="{{ asset('assets/images/icon/logo-bienti-B-01.png') }}" />
+        <link rel="manifest" href="" sizes="30x30"/>
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />

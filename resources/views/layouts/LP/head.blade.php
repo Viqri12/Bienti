@@ -1,12 +1,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HARSA MANUAL</title>
+    <title>Bienti Media</title>
     <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="250x250" href="{{ asset('assets/images/icon/logo-harsa-26.png')}}" />
-    <link rel="icon" type="image/png" sizes="50x50" href="{{ asset('assets/images/icon/logo-harsa-26.png')}}" />
-    <link rel="icon" type="image/png" sizes="30x30" href="{{ asset('assets/images/icon/logo-harsa-26.png')}}" />
-    <link rel="manifest" href="{{ asset('assets/images/icon/logo-harsa-26.png')}}" sizes="30x30"/>
+    <link rel="apple-touch-icon" sizes="250x250" href="{{ asset('assets/images/icon/logo-bienti-B-01.png') }}" />
+    <link rel="icon" type="image/png" sizes="50x50" href="{{ asset('assets/images/icon/logo-bienti-B-01.png') }}" />
+    <link rel="icon" type="image/png" sizes="30x30" href="{{ asset('assets/images/icon/logo-bienti-B-01.png') }}" />
+    <link rel="manifest" href="{{ asset('assets/images/icon/logo-bienti-B-01.png') }}" sizes="30x30"/>
     <meta name="description" content="Entox HTML Template For Car Business" />
 
     <!-- fonts --> 

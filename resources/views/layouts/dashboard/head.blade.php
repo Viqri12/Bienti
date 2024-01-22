@@ -1,7 +1,7 @@
 <head> 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- Primary Meta Tags -->
-<title>Harsamanual.id</title>
+<title>Bienti.id</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="title" content="Marketing Agency">
 <meta name="author" content="Themesberg"> 
@@ -24,10 +24,10 @@
 <meta property="twitter:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/volt-pro-bootstrap-5-dashboard/volt-pro-preview.jpg">
 
 <!-- Favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/images/icon/logo-harsa-26.png')}}" />
-<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/images/icon/logo-harsa-26.png')}}" />
-<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/images/icon/logo-harsa-26.png')}}" />
-<link rel="manifest" href="{{ asset('assets/images/icon/logo-harsa-26.png')}}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/images/icon/logo-bienti-B-01.png') }}" />
+<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/images/icon/logo-bienti-B-01.png') }}" />
+<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/images/icon/logo-bienti-B-01.png') }}" />
+<link rel="manifest" href="{{ asset('assets/images/icon/logo-bienti-B-01.png') }}">
 {{-- <link rel="mask-icon" href="{{ asset('assets/img/favicon/safari-pinned-tab.svg')}}" color="#ffffff"> --}}
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">

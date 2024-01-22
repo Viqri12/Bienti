@@ -9,7 +9,7 @@
 		<!-- /.ico-item -->
 		<div class="ico-item fa fa-arrows-alt js__full_screen"></div>
 		<div class="ico-item">
-			<img src="{{ asset('assets/images/icon/logo-harsa-26.png') }}" alt="" class="ico-img">
+			<img src="{{ asset('assets/images/icon/logo-bienti-B-01.png') }}" alt="" class="ico-img">
 			<ul class="sub-ico-item">
 				<li><a href="#">Settings</a></li>
 				<li><a href="#">Blog</a></li>

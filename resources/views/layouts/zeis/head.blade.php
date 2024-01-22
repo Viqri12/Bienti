@@ -5,11 +5,11 @@
 	<meta name="description" content="">
 	<meta name="author" content=""> 
 
-	<title>HARSA MANUAL</title>
-	<link rel="apple-touch-icon" sizes="250x250" href="{{ asset('assets/images/icon/logo-harsa-26.png')}}" />
-    <link rel="icon" type="image/png" sizes="50x50" href="{{ asset('assets/images/icon/logo-harsa-26.png')}}" />
-    <link rel="icon" type="image/png" sizes="30x30" href="{{ asset('assets/images/icon/logo-harsa-26.png')}}" />
-    <link rel="manifest" href="{{ asset('assets/images/icon/logo-harsa-26.png')}}" sizes="30x30"/>
+	<title>Bienti Media</title>
+	<link rel="apple-touch-icon" sizes="250x250" href="{{ asset('assets/images/icon/logo-bienti-B-01.png') }}" />
+    <link rel="icon" type="image/png" sizes="" href="{{ asset('assets/images/icon/logo-bienti-B-01.png') }}" />
+    <link rel="icon" type="image/png" sizes="30x30" href="{{ asset('assets/images/icon/logo-bienti-B-01.png') }}" />
+    <link rel="manifest" href="{{ asset('assets/images/icon/logo-bienti-B-01.png') }}" sizes="30x30"/>
  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		
