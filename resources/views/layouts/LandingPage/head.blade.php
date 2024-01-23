@@ -1,15 +1,23 @@
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bienti Media</title>
-    <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="250x250" href="{{ asset('assets/images/icon/logo-bienti-B-01.png') }}" />
-    <link rel="icon" type="image/png" sizes="50x50" href="{{ asset('assets/images/icon/logo-bienti-B-01.png') }}" />
-    <link rel="icon" type="image/png" sizes="30x30" href="{{ asset('assets/images/icon/logo-bienti-B-01.png') }}" />
-    <link rel="manifest" href="{{ asset('assets/images/icon/logo-bienti-B-01.png') }}" sizes="30x30"/>
-    <meta name="description" content="Entox HTML Template For Car Business" />
 
-    <!-- fonts --> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Education Meeting HTML5 Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-edu-meeting.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -70,4 +78,4 @@
     <link rel="stylesheet" href="{{ asset('assets/css/owl.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/lightbox.css') }}">
 
-</head>
+  </head>

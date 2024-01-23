@@ -1,11 +1,11 @@
 @extends('layouts.LP.app')
 @section('content')
-<div class="mx-auto text-center mt-5">
-    {{-- <img src="{{ asset('assets/images/icon/Unauthorized-02.png') }}" width="400" height="400" class="img-fluid"> --}}
+{{-- <div class="mx-auto text-center mt-5">
+    <img src="{{ asset('assets/images/icon/Unauthorized-02.png') }}" width="400" height="400" class="img-fluid">
     <div class="fw-bold" style="font-size: 50px">404 - Page Not Found</div>
     <p>The requested page could not be found.</p>
-</div>
-{{-- @include('layouts.LP.navbar')
+</div> --}}
+@include('layouts.LP.navbar')
         <div class="">
             <section class="main-slider ">
                 <div class="swiper-container thm-swiper__slider" data-swiper-options=''>
@@ -526,7 +526,7 @@
                     </div>
                 </div>
             </div>
-        </section> --}}
+        </section>
         {{-- <section class="brand-one">
             <div class="container">
                 <div class="thm-swiper__slider swiper-container cursor-pointer" data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
@@ -591,7 +591,7 @@
             </div>
         </section> --}}
 
-        {{-- <section class="cta-one">
+        <section class="cta-one">
             <div class="cta-one-bg" style="background-image: url(assets/images/backgrounds/cta-one-bg.jpg)"></div>
             <div class="container">
                 <div class="row">
@@ -656,5 +656,5 @@
 </script>
 
 
-@include('layouts.LP.footer') --}}
+@include('layouts.LP.footer')
 @endsection

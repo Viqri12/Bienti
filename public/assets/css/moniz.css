@@ -1807,8 +1807,8 @@ body.boxed-wrapper {
 # Banner One
 --------------------------------------------------------------*/
 .main-slider {
-  overflow: hidden;
-  position: relative;
+  /* overflow: hidden; */
+  /* position: relative; */
 }
 
 .main-slider .swiper-slide {
@@ -1817,8 +1817,8 @@ body.boxed-wrapper {
 }
 
 .main-slider .swiper-slide .container {
-  position: relative;
-  z-index: 30;
+  /* position: relative; */
+  /* z-index: 30; */
 }
 
 .main-slider .image-layer {

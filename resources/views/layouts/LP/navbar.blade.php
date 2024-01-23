@@ -1,4 +1,4 @@
-<header class="main-header clearfix">
+<header class="main-header clearfix ">
     <nav class="main-menu clearfix d-flex align-items-center justify-content-between col-12">
         {{-- <div class="main-menu-wrapper clearfix  col-12"> --}}
             <div class=" d-flex align-items-center">

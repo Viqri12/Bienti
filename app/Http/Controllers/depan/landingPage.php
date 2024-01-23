@@ -15,6 +15,11 @@ class landingPage extends Controller
         return view('landingpage.landing');
     }
 
+    public function contoh()
+    {
+        return view('admin.contoh.lp-contoh');
+    }
+
     /**
      * Show the form for creating a new resource.
      */
