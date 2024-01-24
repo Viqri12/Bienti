@@ -4,16 +4,16 @@
     {{-- <img src="{{ asset('assets/images/icon/Unauthorized-02.png') }}" width="400" height="400" class="img-fluid"> --}}
     <div class="fw-bold" style="font-size: 50px">404 - Page Not Found</div>
     <p>The requested page could not be found.</p>
-</div>
+</div> 
 {{-- @include('layouts.LP.navbar')
         <div class="">
-            <section class="main-slider ">
+            <section class="main-slider">
                 <div class="swiper-container thm-swiper__slider" data-swiper-options=''>
                     <div class="">
                         <section class="d-md-flex align-items-center justify-content-center" id="" data-section="" style="" >
                             <div class="">
                                 <video autoplay muted loop  class="" height="1000" style="">
-                                    <source src="./assets/videolow.mp4"  type="video/mp4" style=""  />
+                                    <source src="./assets/videolow-1.mp4"  type="video/mp4" style=""  />
                                 </video>
                             </div>
                     
@@ -591,7 +591,7 @@
             </div>
         </section> --}}
 
-        {{-- <section class="cta-one">
+         {{-- <section class="cta-one">
             <div class="cta-one-bg" style="background-image: url(assets/images/backgrounds/cta-one-bg.jpg)"></div>
             <div class="container">
                 <div class="row">

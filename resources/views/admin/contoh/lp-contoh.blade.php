@@ -13,7 +13,7 @@
                         <section class="d-md-flex align-items-center justify-content-center" id="" data-section="" style="" >
                             <div class="">
                                 <video autoplay muted loop  class="" height="1000" style="">
-                                    <source src="./assets/videolow.mp4"  type="video/mp4" style=""  />
+                                    <source src="./assets/videolow-1.mp4"  type="video/mp4" style=""  />
                                 </video>
                             </div>
                     
@@ -84,7 +84,7 @@
                 </div>
             </section>
             <section class="counters-one">
-                <div class="container">
+                <div class="container align-items-center">
                     <ul class="counters-one__box list-unstyled">
                         <li class="counter-one__single wow fadeInUp" data-wow-delay="100ms">
                             <div class="counter-one__icon">
