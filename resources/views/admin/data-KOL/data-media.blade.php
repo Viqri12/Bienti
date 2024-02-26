@@ -26,6 +26,7 @@
                                                 <th data-field="Feed_Carousel" class="text-center" style="font-size: 12px;">IG Story</th>
                                                 <th data-field="Story" class="text-center" style="font-size: 12px;">IG Story With Link</th>
                                                 <th data-field="Reels" class="text-center" style="font-size: 12px;">Press Release</th>
+                                                <th data-field="attending_event" class="text-center" style="font-size: 12px;">Attending Event</th>
                                                 <th data-field="task" data-editable="true" class="text-center" style="font-size: 12px;">Category</th>
                                                 <th data-field="date" data-editable="true" class="text-center" style="font-size: 12px;">Contact Person</th>
                                                 <th data-field="price" data-editable="true" class="text-center" style="font-size: 12px;">Notes</th>
@@ -50,6 +51,7 @@
                                                 <td>{{ $item->ig_Story }}</td>
                                                 <td>{{ $item->ig_story_with_link }}</td>
                                                 <td>{{ $item->press_release }}</td>
+                                                <td>{{ $item->attending_event }}</td>
                                                 <td>
                                                     @foreach ($item->category1 as $ctg)
                                                         {{ $ctg->name }},

@@ -11,6 +11,7 @@ use App\Models\Tier;
 use App\Models\Comunity;
 use App\Models\RateCardHasInfluencer;
 use App\Models\SosialMedia;
+use App\Models\TierSosmed;
 
 use Illuminate\Http\Request;
 
@@ -36,20 +37,21 @@ class DataKolController extends Controller
             $q->where('sosial_media_id',$sosial->id);
         },'tier'])->get(); 
         $listRateCard = Rate_card::where('sosial_media_id',$sosial->id)->get();
-        // return $influencer[0]->sosialmedia[0]->rateCard;
+        // return $influencer;
         return view('admin.data-KOL.data-instagram', compact('table','influencer','listRateCard','sosial'));
     }
     
     public function EditKol($id) 
     {
         $table = 'Edit KOL Instagram';
+        $data = TierSosmed::all();
         $sosial = SosialMedia::where('name','instagram')->first();
         $influencer = influencer::where('id',$id)->whereHas('sosialmedia',function($q) use ($sosial){
             $q->where('sosial_media_id',$sosial->id);
         })->with(['sosialmedia' => function($q) use ($sosial){
             $q->where('sosial_media_id',$sosial->id);
         }])->first();   
-        return view('admin.edit-KOL.edit-KOL-instagram', compact('table','influencer','id','sosial'));
+        return view('admin.edit-KOL.edit-KOL-instagram', compact('table','influencer','id','sosial','data'));
     }
 
     public function EditKolData(Request $request,$id)
@@ -65,6 +67,7 @@ class DataKolController extends Controller
             'followers' => $request->followers,
             'username' => $request->username,
             'link' => $request->ig_link,
+            'tier' => $request->tier,
             'notes' => $request->notes
         ]);
         $data = [];
@@ -105,18 +108,19 @@ class DataKolController extends Controller
     public function EditKolTwitter($id) 
     {
         $table = 'Edit KOL Twitter';
+        $tier = TierSosmed::all();
         $sosial = SosialMedia::where('name','twitter')->first();
         $influencer = influencer::where('id',$id)->whereHas('sosialmedia',function($q) use ($sosial){
             $q->where('sosial_media_id',$sosial->id);
         })->with(['sosialmedia' => function($q) use ($sosial){
             $q->where('sosial_media_id',$sosial->id);
         }])->first();
-        return view('admin.edit-KOL.edit-KOL-twitter', compact('table','influencer','id','sosial'));
+        return view('admin.edit-KOL.edit-KOL-twitter', compact('table','influencer','id','sosial','tier'));
     }
     
     public function EditDataTwiiter(Request $request, $id)
     {
-         // return $request;
+         return $request;
          $data = influencer::find($id);
          $data->update([
              'name' => $request->name,
@@ -127,6 +131,7 @@ class DataKolController extends Controller
              'followers' => $request->followers,
              'username' => $request->username,
              'link' => $request->ig_link,
+             'tier' => $request->tier,
              'notes' => $request->notes
          ]);
         //  $data = [];
@@ -159,19 +164,21 @@ class DataKolController extends Controller
             $q->where('sosial_media_id',$sosial->id);
         },'tier'])->get(); 
         $listRateCard = Rate_card::where('sosial_media_id',$sosial->id)->get();
+        // return $influencer;
         return view('admin.data-KOL.data-youtube', compact('table','influencer','listRateCard','sosial'));
     }
 
     public function editYoutube($id) 
     {
         $table = 'Edit KOL Youtube';
+        $data = TierSosmed::all();
         $sosial = SosialMedia::where('name','youtube')->first();
         $influencer = influencer::where('id',$id)->whereHas('sosialmedia',function($q) use ($sosial){
             $q->where('sosial_media_id',$sosial->id);
         })->with(['sosialmedia' => function($q) use ($sosial){
             $q->where('sosial_media_id',$sosial->id);
         }])->first();   
-        return view('admin.edit-KOL.edit-KOL-youtube', compact('table','influencer','id','sosial'));
+        return view('admin.edit-KOL.edit-KOL-youtube', compact('table','influencer','id','sosial','data'));
     }
 
     public function EditDataYoutube(Request $request, $id)
@@ -187,6 +194,7 @@ class DataKolController extends Controller
              'followers' => $request->followers,
              'username' => $request->username,
              'link' => $request->ig_link,
+             'tier' => $request->tier,
              'notes' => $request->notes
          ]);
         //  $data = [];
@@ -220,7 +228,7 @@ class DataKolController extends Controller
             $q->where('sosial_media_id',$sosial->id);
         },'tier'])->get(); 
         $listRateCard = Rate_card::where('sosial_media_id',$sosial->id)->get();
-        
+        // return $influencer;
         return view('admin.data-KOL.data-tiktok', compact('table','influencer','listRateCard','sosial'));
     }
 
@@ -228,13 +236,14 @@ class DataKolController extends Controller
     public function EditTiktok($id) 
     {
         $table = 'Edit KOL Youtube';
+        $data = TierSosmed::all();
         $sosial = SosialMedia::where('name','tiktok')->first();
         $influencer = influencer::where('id',$id)->whereHas('sosialmedia',function($q) use ($sosial){
             $q->where('sosial_media_id',$sosial->id);
         })->with(['sosialmedia' => function($q) use ($sosial){
             $q->where('sosial_media_id',$sosial->id);
         }])->first();   
-        return view('admin.edit-KOL.edit-KOL-tiktok', compact('table','influencer','id','sosial'));
+        return view('admin.edit-KOL.edit-KOL-tiktok', compact('table','influencer','id','sosial','data'));
     }
 
     public function EditDataKol(Request $request, $id)
@@ -250,6 +259,7 @@ class DataKolController extends Controller
               'followers' => $request->followers,
               'username' => $request->username,
               'link' => $request->ig_link,
+              'tier' => $request->tier,
               'notes' => $request->notes
           ]);
          //  $data = [];

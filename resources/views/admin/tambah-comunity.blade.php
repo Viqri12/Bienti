@@ -21,7 +21,7 @@
         }
 </style>
         <div class="mt-3 mb-2 d-md-flex align-items-center col-md-8 ms-3">
-            <span class="fw-bold" style="font-size: 24px;">Input  KOL Comunity</span>
+            <span class="fw-bold" style="font-size: 24px;">Input Comunity</span>
         </div>
             <div class="row border mb-4 col-11 ms-3 bg-white shadow rounded-3">
                 <a href="{{ route('dashboard')}}" class="border-0 col-1 bg-transparent mt-2 text-start" style="">
@@ -54,6 +54,22 @@
                         </div>
                         <div class="">
                             <input type="text" name="followers" class=" form-control col-12" placeholder="Masukan Jumlah Followers">
+                        </div>
+                    </div> 
+                    <div class=" col-md-4 ">
+                        <div class="">
+                            <label class="fw-bold form-label ">Member</label>
+                        </div>
+                        <div class="">
+                            <input type="text" name="member" class=" form-control col-12" placeholder="Masukan Jumlah Member">
+                        </div>
+                    </div> 
+                    <div class=" col-md-4 ">
+                        <div class="">
+                            <label class="fw-bold form-label ">Contact Person</label>
+                        </div>
+                        <div class="">
+                            <input type="text" name="contact_person" class=" form-control col-12" placeholder="+62 8xxxxxxxxxx">
                         </div>
                     </div> 
                     <div class=" col-md-4 ">
@@ -152,7 +168,7 @@
                             <textarea id="deskripsi" name="notes" class="form-control" name="deskripsi" cols="48"></textarea>
                         </div> 
                     </div>
-                    <div class="d-flex justify-content-end col-md-4" style="">
+                    <div class="d-flex justify-content-end col-md-8" style="">
                         <button  class="bg-transparent border-0">
                             <img src="{{ asset('assets-baru/images/img.svg')}}" alt="">
                         </button>

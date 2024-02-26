@@ -20,6 +20,7 @@ class Media extends Model
         'ig_Story',
         'ig_story_with_link',
         'press_release',
+        'attending_event',
         'contact_person',
         'notes'
     ];

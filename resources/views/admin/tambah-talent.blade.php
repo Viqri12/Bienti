@@ -21,7 +21,7 @@
         }
 </style>
         <div class="mt-3 mb-2 d-md-flex align-items-center col-md-8 ms-3">
-            <span class="fw-bold" style="font-size: 24px;">Input  KOL Talent / MC</span>
+            <span class="fw-bold" style="font-size: 24px;">Input Talent / MC</span>
         </div>
             <div class="row border mb-4 col-11 ms-3 bg-white shadow rounded-3">
                 <a href="{{ route('dashboard')}}" class="border-0 col-1 bg-transparent mt-2 text-start" style="">
@@ -95,9 +95,19 @@
                             <span class="fw-bold form-label">Contact Person</span>
                         </div>
                         <div class="">
-                            <input type="text" name="contact_person" class=" form-control col-12" placeholder="Masukan Domisili">
+                            <input type="text" name="contact_person" class=" form-control col-12" placeholder="+62 8xxxxxxxxxx">
                         </div>  
-                    </div>      
+                    </div> 
+                    <div class=" col-md-4">
+                        <div class="">
+                            <label class="fw-bold form-label ">Pilih Category</label>
+                        </div>
+                        <select name="category[]" class="select2_2 form-control" multiple="multiple">
+                            <option value="Beuty">Beuty</option>
+                            <option value="Fashion">Fashion</option>
+                            <option value="Lifstyle">Lifstyle</option>
+                        </select>
+                    </div>
                     <div class=" col-md-4 ">
                         <div class="">
                             <span class="fw-bold form-label">Notes</span>
@@ -106,7 +116,7 @@
                             <textarea id="deskripsi" name="notes" class="form-control" name="deskripsi" cols="48"></textarea>
                         </div>
                     </div> 
-                    <div class="d-flex justify-content-end col-12" style="">
+                    <div class="d-flex justify-content-end col-8" style="">
                         <button  class="bg-transparent border-0">
                             <img src="{{ asset('assets-baru/images/img.svg')}}" alt="">
                         </button>

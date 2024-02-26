@@ -77,6 +77,17 @@
                             <input type="text" value="{{ $influencer->sosialmedia[0]->link}}" required name="ig_link" class="form-control col-12" placeholder="https://Instagram">
                         </div>  
                     </div> 
+                    <div class=" col-md-4  cursor-pointer">
+                        <div class="">
+                            <label class="fw-bold form-label">Tier</label>
+                        </div>
+                        <select required name="tier" class="form-control  col-12 ">
+                            <option value="" class="border">Pilih Tier</option>
+                            @foreach ($tier as $item)
+                            <option value="{{ $item->name }}">{{ $item->name }}</option>
+                            @endforeach
+                        </select>
+                    </div>
                     <div class=" col-4">
                         <div class="">
                             <label class="fw-bold form-label">Notes</label>
@@ -85,7 +96,7 @@
                             <textarea id="deskripsi" name="notes" class="form-control" name="deskripsi" required cols="48">{{ $influencer->sosialmedia[0]->notes }}</textarea>
                         </div> 
                     </div> 
-                <div class="d-flex justify-content-end col-8" style="">
+                <div class="d-flex justify-content-end col-4" style="">
                     <a href="{{ URL::previous() }}" class="bg-transparent border-0">
                         <img src="{{ asset('assets-baru/images/img.svg')}}" alt="">
                     </a>

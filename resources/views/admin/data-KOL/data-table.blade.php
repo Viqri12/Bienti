@@ -20,6 +20,8 @@
                                                 <th data-field="name" data-editable="true" class="text-center" style="font-size: 12px;">Name Comunity</th>
                                                 <th data-field="username" data-editable="true" class="text-center" style="font-size: 12px;">Username</th>
                                                 <th data-field="Followers" data-editable="true" class="text-center" style="font-size: 12px;">Followers</th>
+                                                <th data-field="member" data-editable="true" class="text-center" style="font-size: 12px;">Member</th>
+                                                <th data-field="contact_person" data-editable="true" class="text-center" style="font-size: 12px;">Contact person</th>
                                                 <th data-field="phone" data-editable="true" class="text-center" style="font-size: 12px;">Instagram Link</th>
                                                 <th data-field="email" data-editable="true" class="text-center" style="font-size: 12px;">Tier</th>
                                                 <th data-field="complete" class="text-center" style="font-size: 12px;">IG Photo Feed</th>
@@ -46,6 +48,8 @@
                                                 <td>{{ $item->name }}</td>
                                                 <td>{{ $item->username }}</td>
                                                 <td>{{ $item->followers }}</td>
+                                                <td>{{ $item->Member }}</td>
+                                                <td>{{ $item->contact_person }}</td>
                                                 <td>{{ $item->ig_link }}</td>
                                                 <td>{{ $item->tier}}</td>
                                                 <td>{{ $item->ig_photo_feed }}</td>

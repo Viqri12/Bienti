@@ -100,6 +100,16 @@
                             <input name="contact_person" type="number" class="form-control" value="{{ $data->contact_person }}" name="deskripsi" required cols="48">
                         </div> 
                     </div> 
+                    <div class=" col-md-4">
+                        <div class="">
+                            <label class="fw-bold form-label ">Pilih Category</label>
+                        </div>
+                        <select name="category[]" class="select2_2 form-control" multiple="multiple">
+                            <option value="Beuty">Beuty</option>
+                            <option value="Fashion">Fashion</option>
+                            <option value="Lifstyle">Lifstyle</option>
+                        </select>
+                    </div>
                     <div class=" col-4">
                         <div class="">
                             <label class="fw-bold form-label">Notes</label>

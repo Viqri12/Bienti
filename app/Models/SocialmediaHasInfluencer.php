@@ -15,6 +15,7 @@ class SocialmediaHasInfluencer extends Model
         'username',
         'notes',
         'link',
+        'tier',
         'sosial_media_id',
         'influencer_id'
     ];
@@ -27,5 +28,10 @@ class SocialmediaHasInfluencer extends Model
     public function sosmed()
     {
         return $this->belongsTo(SosialMedia::class, 'sosial_media_id','id');
+    }
+
+    public function TierSosmed()
+    {
+        return $this->belongsTo(TierSosmed::class,'socialmedia_has_influencer_id','id');
     }
 }

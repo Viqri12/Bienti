@@ -37,7 +37,7 @@
                             <label class="fw-bold form-label">Nama Media</label>
                         </div>
                         <div class="">
-                            <input type="text" name="name" class=" form-control col-12"  placeholder="Masukan Nama">
+                            <input type="text" name="name" class=" form-control col-12"  placeholder="Masukan Nama Media">
                         </div>
                     </div>
                     <div class=" col-md-4 ">
@@ -110,6 +110,14 @@
                     </div> 
                     <div class=" col-md-4 ">
                         <div class="">
+                            <label class="fw-bold form-label "> Rate Card Event Attendance</label>
+                        </div>
+                        <div class="">
+                            <input type="text" name="attending_event" class=" form-control col-12" placeholder="">
+                        </div>  
+                    </div> 
+                    <div class=" col-md-4 ">
+                        <div class="">
                             <label class="fw-bold form-label ">Pilih Category</label>
                         </div>
                         <select name="category[]" class="select2_2 form-control" multiple="multiple">
@@ -135,7 +143,7 @@
                             <textarea id="deskripsi" name="notes" class="form-control" name="deskripsi" cols="48"></textarea>
                         </div> 
                     </div>
-                    <div class="d-flex justify-content-end col-12" style="">
+                    <div class="d-flex justify-content-end col-8" style="">
                         <button  class="bg-transparent border-0">
                             <img src="{{ asset('assets-baru/images/img.svg')}}" alt="">
                         </button>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Category_comunity;
 use App\Models\Category_Media;
+use App\Models\category_talent;
 use RealRashid\SweetAlert\Facades\Alert;
 use App\Models\CategoryInfluencer;
 use App\Models\influencer;
@@ -16,6 +17,7 @@ use App\Models\Talent;
 use App\Models\Comunity;
 use App\Models\Media;
 use App\Models\Tier;
+use App\Models\TierSosmed;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -138,7 +140,7 @@ class DashboardController extends Controller
             ]);
             }
             }
-            Alert::success('Berhasil', 'Influencer Berhasil di tambahkan');
+            Alert::success('Berhasil', 'Influencer Berhasil di tambahkan'); 
             return redirect('admin/dashboard');
     }   
 
@@ -156,6 +158,7 @@ class DashboardController extends Controller
     {
         $table = 'Instagram';
         $list = [];
+        $data = TierSosmed::all();
         $social = SosialMedia::with('RateCard')->where('name','instagram')->first();
         $influencer = influencer::with(['sosialmedia' => function($q) use ($social){
             $q->where('sosial_media_id', $social->id);
@@ -165,9 +168,9 @@ class DashboardController extends Controller
                 $list[] = $item;
             }
         }
-        // return $list;
+        // return $data;
         // return $social;  
-        return view('admin.tambah-data', compact('table','social','influencer','list'));
+        return view('admin.tambah-data', compact('table','social','influencer','list','data'));
     }
 
     public function create(Request $request)
@@ -177,6 +180,7 @@ class DashboardController extends Controller
             'followers' => $request->followers,
             'username' => $request->username,
             'notes' => $request->notes,
+            'tier' => $request->tier,
             'link' => $request->ig_link,
             'influencer_id' => $request->name,
             'sosial_media_id' => $request->has_influencer
@@ -214,6 +218,8 @@ class DashboardController extends Controller
             'name' => $request->name_comunity,
             'username' => $request->username,
             'followers' => $request->followers,
+            'member' => $request->member,
+            'contact_person' => $request->contact_person,
             'ig_link' => $request->comunity_link,
             'tier' => $request->tier,
             'ig_photo_feed' => $request->ig_photo_feed,
@@ -265,6 +271,8 @@ class DashboardController extends Controller
             'name' => $request->name,
             'username' => $request->username,
             'followers' => $request->followers,
+            'member' => $request->member,
+            'contact_person' => $request->contact_person,
             'ig_link' => $request->ig_link,
             'tier' => $request->tier,
             'ig_photo_feed' => $request->ig_photo_feed,
@@ -321,6 +329,7 @@ class DashboardController extends Controller
             'ig_Story' => $request->ig_Story,
             'ig_story_with_link' => $request->ig_story_with_link,
             'press_release' => $request->press_release,
+            'attending_event' => $request->attending_event,
             'contact_person' => $request->contact_person,
             'notes' => $request->notes
         ]);
@@ -384,6 +393,7 @@ class DashboardController extends Controller
             'ig_Story' => $request->ig_story,
             'ig_story_with_link' => $request->ig_story_with_link,
             'press_release' => $request->press_release,
+            'attending_event' => $request->attending_event,
             'contact_person' => $request->contact_person,
             'notes' => $request->notes
         ]);
@@ -412,6 +422,8 @@ class DashboardController extends Controller
     public function twitter()
     {
         $table = 'Twitter';
+        $tier = TierSosmed::all();
+        // return $tier;
         $list = [];
         $social = SosialMedia::with('RateCard')->where('name','twitter')->first();
         $influencer = influencer::with(['sosialmedia' => function($q) use ($social){
@@ -422,7 +434,7 @@ class DashboardController extends Controller
                 $list[] = $item;
             }
         }
-        return view('admin.tambah-twitter', compact('table','social','influencer','list'));
+        return view('admin.tambah-twitter', compact('table','social','influencer','list','tier'));
     }
 
     public function TambahTwitter(Request $request)
@@ -433,11 +445,17 @@ class DashboardController extends Controller
             'username' => $request->username,
             'notes' => $request->notes,
             'link' => $request->ig_link,
+            'tier' => $request->tier,
             'influencer_id' => $request->name,
             'sosial_media_id' => $request->has_influencer
         ]);
 
-        // dd($create);
+        // $tambah = TierSosmed::create([
+        //     'tier' => $request->tier,
+        //     'socialmedia_has_influencer_id' => $create->id
+        // ]);
+
+        // dd($tambah);
         for($i=0; $i < count($request->ratecard_id);$i++)
         {
             RateCardHasInfluencer::create([
@@ -458,6 +476,7 @@ class DashboardController extends Controller
     {
         $table = 'Youtube';
         $list = [];
+        $data = TierSosmed::all();
         $social = SosialMedia::with('RateCard')->where('name','youtube')->first();
         $influencer = influencer::with(['sosialmedia' => function($q) use ($social){
             $q->where('sosial_media_id', $social->id);
@@ -467,7 +486,7 @@ class DashboardController extends Controller
                 $list[] = $item;
             }
         }
-        return view('admin.tambah-youtube', compact('table','social','influencer','list'));
+        return view('admin.tambah-youtube', compact('table','social','influencer','list','data'));
     }
 
     public function TambahYoutube(Request $request)
@@ -478,6 +497,7 @@ class DashboardController extends Controller
             'username' => $request->username,
             'notes' => $request->notes,
             'link' => $request->ig_link,
+            'tier' => $request->tier,
             'influencer_id' => $request->name,
             'sosial_media_id' => $request->has_influencer
         ]);
@@ -503,6 +523,7 @@ class DashboardController extends Controller
     {
         $table = 'Tiktok';
         $list = [];
+        $data = TierSosmed::all();
         $social = SosialMedia::with('RateCard')->where('name','tiktok')->first();
         $influencer = influencer::with(['sosialmedia' => function($q) use ($social){
             $q->where('sosial_media_id', $social->id);
@@ -512,7 +533,7 @@ class DashboardController extends Controller
                 $list[] = $item;
             }
         }
-        return view('admin.tambah-tiktok', compact('table','social','influencer','list'));
+        return view('admin.tambah-tiktok', compact('table','social','influencer','list','data'));
     }
 
     public function TambahTiktok(Request $request)
@@ -523,6 +544,7 @@ class DashboardController extends Controller
         'username' => $request->username,
         'notes' => $request->notes,
         'link' => $request->ig_link,
+        'tier' => $request->tier,
         'influencer_id' => $request->name,
         'sosial_media_id' => $request->has_influencer
     ]);
@@ -547,12 +569,13 @@ class DashboardController extends Controller
     public function talent()
     {
         $table = 'Talent / MC';
-        return view('admin.tambah-talent', compact('table'));
+        $category = talent::with('category3')->get();
+        return view('admin.tambah-talent', compact('table','category'));
     }
 
     public function TambahTalent(Request $request)
     {
-        // return $request;
+        // return $request; 
         $tambah = Talent::create([
             'name' => $request->name,
             'username' => $request->username,
@@ -564,6 +587,13 @@ class DashboardController extends Controller
             'contact_person' => $request->contact_person,
             'notes' => $request->notes
         ]);
+
+        foreach ($request->category as $item) {
+            category_talent::create([
+                'talent_id' => $tambah->id,
+                'name' => $item
+            ]);
+          }
         // return $tambah;
         Alert::success('Berhasil', 'Talent Berhasil di tambahkan');
         return redirect('admin/dashboard');
@@ -580,9 +610,20 @@ class DashboardController extends Controller
     public function EditTalent($id)
     {
         $table = 'Edit Talent';
-        $data = Talent::where('id',$id)->first();
+        $data = Talent::where('id',$id)->with('category3')->first();
         // return $data;
-        return view('admin.edit-KOL.edit-talent', compact('table','data','id'));
+        $list = [];
+        $lists = ["Lifestyle","Beuty","Healthcare","tourism"];
+            foreach ($data->category3 as $key => $item) {
+                $list[] = $item->name;
+                $cari1 = array_filter($lists, function($p) use ($item){
+                  return $p == $item->name;
+                });
+                if (count($cari1) == 0) {
+                    $lists[] = $item->name;
+                }
+            };
+        return view('admin.edit-KOL.edit-talent', compact('table','data','list','lists','id'));
     }
 
     public function EditDataTalent(Request $request, $id)
@@ -600,6 +641,13 @@ class DashboardController extends Controller
             'contact_person' => $request->contact_person,
             'notes' => $request->notes
         ]);
+
+        foreach ($request->category as $item) {
+            category_talent::where('id', $item)->update([
+                'talent_id' => $data->id,
+                'name' => $item
+            ]);
+        }
 
         Alert::success('Berhasil', 'Edit Talent Berhasil');
         return redirect('admin/data-talent');

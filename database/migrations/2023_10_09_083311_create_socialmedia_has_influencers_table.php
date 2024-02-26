@@ -15,8 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('followers')->nullable();
             $table->string('username')->nullable();
-            $table->string('notes')->nullable();
+            $table->text('notes')->nullable();
             $table->string('link')->nullable();
+            $table->string('tier')->nullable();
             $table->unsignedBigInteger('influencer_id')->nullable();    
             $table->unsignedBigInteger('sosial_media_id')->nullable();
             $table->foreign('influencer_id')->references('id')->on('influencer')->onDelete('cascade');    

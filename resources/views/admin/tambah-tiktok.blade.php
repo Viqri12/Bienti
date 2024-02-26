@@ -21,7 +21,7 @@
         }
 </style>
         <div class="mt-3 mb-2 d-md-flex align-items-center col-md-8 ms-3">
-            <span class="fw-bold" style="font-size: 24px;">Input  KOL Tiktok</span>
+            <span class="fw-bold" style="font-size: 24px;">Input  KOL TikTok</span>
         </div>
         <div class="row border mb-4 col-11 ms-3 bg-white shadow rounded-3">
             <a href="{{ route('dashboard')}}" class="col-1 bg-transparent mt-2 text-start" style="">
@@ -79,6 +79,17 @@
                             <input type="text" name="ig_link" class=" form-control col-12" placeholder="wwww.tiktok.com/p/CvO8pb8rkm_/">
                         </div>  
                     </div> 
+                    <div class=" col-md-4  cursor-pointer">
+                        <div class="">
+                            <label class="fw-bold form-label">Tier</label>
+                        </div>
+                        <select required name="tier" class="form-control  col-12 ">
+                            <option value="" class="border">Pilih Tier</option>
+                            @foreach ($data as $item)
+                            <option value="{{ $item->name }}">{{ $item->name }}</option>
+                            @endforeach
+                        </select>
+                    </div>
                     <div class=" col-md-4">
                         <div class="">
                             <label class="fw-bold form-label">Notes</label>

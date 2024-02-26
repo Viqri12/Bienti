@@ -16,6 +16,8 @@ class Comunity extends Model
         'username',
         'followers',
         'ig_link',
+        'member',
+        'contact_person',
         'tier',
         'ig_photo_feed',
         'ig_Photo_feed_carousel',

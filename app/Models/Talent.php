@@ -23,4 +23,9 @@ class Talent extends Model
         'notes'
     ];
 
+    public function category3() 
+    {
+        return $this->hasMany(category_talent::class,'talent_id','id');
+    }
+
 }

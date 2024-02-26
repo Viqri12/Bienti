@@ -76,6 +76,17 @@
                         <div class="">
                             <input type="text" value="{{ $influencer->sosialmedia[0]->link}}" required name="ig_link" class="form-control col-12" placeholder="https://Instagram">
                         </div>  
+                    </div>
+                    <div class=" col-md-4  cursor-pointer">
+                        <div class="">
+                            <label class="fw-bold form-label">Tier</label>
+                        </div>
+                        <select required name="tier" class="form-control  col-12 ">
+                            <option value="" class="border">Pilih Tier</option>
+                            @foreach ($data as $item)
+                            <option value="{{ $item->name }}">{{ $item->name }}</option>
+                            @endforeach
+                        </select>
                     </div> 
                     <div class=" col-4">
                         <div class="">

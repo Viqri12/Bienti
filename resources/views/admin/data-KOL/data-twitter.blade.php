@@ -36,12 +36,15 @@
                                             <tr class="text-center" style="font-size: 12px;">
                                                 <td>
                                                       <input type="checkbox" class="checkData{{ $key }}" onchange="pilih({
-                                                        key : {{ $key }},
+                                                        key : {{ $key }}, 
                                                     })" name="row1">
                                                 </td>
                                                 <td>{{ $loop->iteration }}</td>
                                                 <td>{{ $item->name }}</td>
-                                                <td>{{ $item->tier->name}}</td>
+                                                <td> 
+                                                    @foreach ($item->sosialmedia as $sosmed_3)
+                                                    {{ $sosmed_3->tier }} 
+                                                    @endforeach</td>
                                                 <td> 
                                                      @foreach ($item->sosialmedia as $sosmed_1)
                                                     {{ $sosmed_1->followers }} 

@@ -109,6 +109,14 @@
                             <input type="text" name="press_release" value="{{ $data->press_release }}" class=" form-control col-12" placeholder="">
                         </div>  
                     </div> 
+                    <div class=" col-md-4 ">
+                        <div class="">
+                            <label class="fw-bold form-label "> Rate Card Event Attendance</label>
+                        </div>
+                        <div class="">
+                            <input type="text" name="attending_event" class=" form-control col-12" placeholder="">
+                        </div>  
+                    </div>
                     <div class=" col-4  cursor-pointer">
                         <div class="">
                             <label class="fw-bold form-label ">Pilih Category</label>

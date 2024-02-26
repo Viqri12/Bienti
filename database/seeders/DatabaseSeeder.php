@@ -17,5 +17,6 @@ class DatabaseSeeder extends Seeder
        $this->call(SocialMediaSeeder::class);
        $this->call(CategorySeeder::class);
        $this->call(TierSeeder::class);
+       $this->call(TierSosmedSeeder::class);
     }
 }

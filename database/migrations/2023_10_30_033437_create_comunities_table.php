@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('name')->nullable();
             $table->string('username')->nullable();
             $table->string('followers')->nullable();
+            $table->string('Member')->nullable();
+            $table->string('contact_person')->nullable();
             $table->string('ig_link')->nullable();
             $table->string('tier')->nullable();
             $table->string('ig_photo_feed')->nullable();
@@ -25,7 +27,7 @@ return new class extends Migration
             $table->string('ig_Live')->nullable();
             $table->string('attending_Event')->nullable();
             $table->string('domisili')->nullable();
-            $table->string('notes')->nullable();
+            $table->text('notes')->nullable();
             $table->timestamps();
         });
     }

@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('jenis_kelamin')->nullable();
             $table->string('domisili')->nullable();
             $table->string('contact_person')->nullable();
-            $table->string('notes')->nullable();
+            $table->text('notes')->nullable();
             $table->timestamps();
         });
     }

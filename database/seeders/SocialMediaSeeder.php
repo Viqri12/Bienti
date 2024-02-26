@@ -19,7 +19,7 @@ class SocialMediaSeeder extends Seeder
            [
             'name' =>  'youtube',
             'rate_card' => [
-                'Youtube'
+                'Rate Card Youtube'
             ]
            ],
 
@@ -39,7 +39,9 @@ class SocialMediaSeeder extends Seeder
            [
             'name' =>  'tiktok',
             'rate_card' => [
-                'Tiktok Video',
+                'Rate Card TikTok Video',
+                'Rate Card Story TikTok',
+                'Rate Card Live TikTok',
                 'Attending Event'
             ]
            ],
@@ -49,8 +51,8 @@ class SocialMediaSeeder extends Seeder
             'rate_card' => [
                 '1x Tweet',
                 '1x Tweet with image',
-                '1x Treads Tweet',
-                '1x Treads Tweet with Image',
+                '1x thread Tweet',
+                '1x thread Tweet with Image',
                 '1x Video Tweet',   
             ]
            ],

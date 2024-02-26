@@ -25,6 +25,7 @@
                                                 <th data-field="jenis_kelamin" data-editable="true" class="text-center" style="font-size: 12px;">Jenis Kelamin</th>
                                                 <th data-field="date" data-editable="true" class="text-center" style="font-size: 12px;">Domisili</th>
                                                 <th data-field="phone" data-editable="true" class="text-center" style="font-size: 12px;">Contact Person</th>
+                                                <th data-field="category" data-editable="true" class="text-center" style="font-size: 12px;">Category</th>
                                                 <th data-field="price" data-editable="true" class="text-center" style="font-size: 12px;">Notes</th>
                                                 <th data-field="action" class="text-center" style="font-size: 12px;">Action</th>
                                             </tr>
@@ -46,6 +47,12 @@
                                                 <td>{{ $item->jenis_kelamin}}</td>
                                                 <td>{{ $item->domisili}}</td>
                                                 <td>{{ $item->contact_person }}</td>
+                                                <td>
+                                                    {{-- {{ $item->category }} --}}
+                                                    @foreach ($item->category3 as $ctg)
+                                                        {{ $ctg->name }},
+                                                    @endforeach
+                                                </td>
                                                 <td>{{ $item->notes }}</td>
                                                 <td class="d-flex align-items-center justify-content-center">
                                                     <a href="{{ route('edit_talent',$item->id)}}">

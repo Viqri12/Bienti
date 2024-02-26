@@ -59,6 +59,22 @@
                     </div> 
                     <div class=" col-4">
                         <div class="">
+                            <label class="fw-bold form-label">Member</label>
+                        </div>
+                        <div class="">
+                            <input type="text" value="{{ $data->Member }}" required name="member" class="form-control col-12" placeholder="Masukan Jumlah Member">
+                        </div> 
+                    </div> 
+                    <div class=" col-4">
+                        <div class="">
+                            <label class="fw-bold form-label">Contact Person</label>
+                        </div>
+                        <div class="">
+                            <input type="text" value="{{ $data->contact_person }}" required name="contact_person" class="form-control col-12" placeholder="Masukan Contact Person">
+                        </div> 
+                    </div> 
+                    <div class=" col-4">
+                        <div class="">
                             <label class="fw-bold form-label">Instagram Link</label>
                         </div>
                         <div class="">
@@ -156,7 +172,7 @@
                             <textarea id="deskripsi" name="notes" class="form-control" name="deskripsi" required cols="48">{{ $data->notes }}</textarea>
                         </div> 
                     </div> 
-                <div class="d-flex justify-content-end col-4" style="">
+                <div class="d-flex justify-content-end col-8" style="">
                     <a href="{{ URL::previous() }}" class="bg-transparent border-0">
                         <img src="{{ asset('assets-baru/images/img.svg')}}" alt="">
                     </a>

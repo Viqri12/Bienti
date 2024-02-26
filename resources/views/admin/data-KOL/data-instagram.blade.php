@@ -41,7 +41,11 @@
                                                 </td>
                                                 <td>{{ $loop->iteration }}</td>
                                                 <td>{{ $item->name }}</td>
-                                                <td>{{ $item->tier->name}}</td>
+                                                <td>
+                                                    @foreach ($item->sosialmedia as $sosmedTier)
+                                                    {{ $sosmedTier->tier }} 
+                                                    @endforeach
+                                                </td>
                                                 <td> 
                                                      @foreach ($item->sosialmedia as $sosmed_1)
                                                     {{ $sosmed_1->followers }} 

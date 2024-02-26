@@ -22,8 +22,9 @@ return new class extends Migration
             $table->string('ig_Story')->nullable();
             $table->string('ig_story_with_link')->nullable();
             $table->string('press_release')->nullable();
+            $table->string('attending_event')->nullable();
             $table->string('contact_person')->nullable();
-            $table->string('notes')->nullable();
+            $table->text('notes')->nullable();
             $table->timestamps();
         });
     }

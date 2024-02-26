@@ -29,7 +29,7 @@
                     <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-35.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/>
                 </svg>
             </a>
-            <form action="{{ route('tambah-instagram') }}" method="POST">
+            <form action="{{ route('tambah-twitter') }}" method="POST">
                 @csrf
                 <div class="row g-3 mb-2 p-3 col-12">
                     <div class=" col-md-4 ">
@@ -79,6 +79,17 @@
                             <input type="text" name="ig_link" class="form-control col-12" placeholder="wwww.tiktok.com/p/CvO8pb8rkm_/">
                         </div>  
                     </div> 
+                    <div class=" col-md-4  cursor-pointer">
+                        <div class="">
+                            <label class="fw-bold form-label">Tier</label>
+                        </div>
+                        <select required name="tier" class="form-control  col-12 ">
+                            <option value="" class="border">Pilih Tier</option>
+                            @foreach ($tier as $item)
+                            <option value="{{ $item->name }}">{{ $item->name }}</option>
+                            @endforeach
+                        </select>
+                    </div>
                     <div class=" col-md-4">
                         <div class="">
                             <label class="fw-bold form-label">Notes</label>
@@ -87,7 +98,7 @@
                             <textarea id="deskripsi" name="notes" class="form-control" name="deskripsi" cols="48"></textarea>
                         </div> 
                     </div> 
-                <div class="d-flex justify-content-end  col-md-8 col-sm-12" style="">
+                <div class="d-flex justify-content-end  col-md-4 col-sm-12" style="">
                     <button  class="bg-transparent border-0">
                         <img src="{{ asset('assets-baru/images/img.svg')}}" alt="">
                     </button>
