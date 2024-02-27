@@ -257,7 +257,7 @@ class DataKolController extends Controller
           $data2 = SocialmediaHasInfluencer::where('sosial_media_id',$request->sosialmedia_id)->where('influencer_id',$id)->first();
           $data2->update([
               'followers' => $request->followers,
-              'username' => $request->username,
+              'username' =>          $request->username,
               'link' => $request->ig_link,
               'tier' => $request->tier,
               'notes' => $request->notes
