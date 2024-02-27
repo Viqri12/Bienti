@@ -230,8 +230,8 @@
                     lengthChange: false,
                     buttons: [ 'copy', 'excel', 'pdf', 'colvis' ],
                     lengthMenu: [
-                        [5, 10, 15, 20, 25, 30, 40, 50, -1],
-                        [5, 10, 15, 20, 25, 30, 40, 50, "All"]
+                        [10, 20, 30, 40, 50, 60, 70, 80, -1],
+                        [10, 20, 30, 40, 50, 60, 70, 80, "All"]
                     ],
                 }
                 var table = $('#example').DataTable(option);

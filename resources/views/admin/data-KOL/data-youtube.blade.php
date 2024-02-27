@@ -16,7 +16,7 @@
                                         <thead>
                                             <tr class="">
                                                 <th data-field="state" data-checkbox="true" class="text-center" style="font-size: 12px;">select</th>
-                                                <th data-field="id" style="font-size: 12px;">No</th>
+                                                <th data-field="id" class="text-center" style="font-size: 12px;">No</th>
                                                 <th data-field="name" data-editable="true" class="text-center" style="font-size: 12px;">Name</th>
                                                 <th data-field="email" data-editable="true" class="text-center" style="font-size: 12px;">Tier</th>
                                                 <th data-field="Followers" data-editable="true" class="text-center" style="font-size: 12px;">Followers</th>
