@@ -58,7 +58,7 @@
                                                 </td>
                                                    @foreach ($item->sosialmedia[0]->rateCard as $sosmed_1)
                                                     <td>
-                                                        {{ $sosmed_1->price }}
+                                                        {{ $sosmed_1->price ?? "-" }}
                                                     </td>
                                                     @endforeach
                                                 <td>
