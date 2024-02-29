@@ -40,20 +40,20 @@
                                                     })" name="row1">
                                                 </td>
                                                 <td>{{ $loop->iteration }}</td>
-                                                <td>{{ $item->name }}</td>
+                                                <td>{{ $item->name ?? "-" }}</td>
                                                 <td>
                                                     @foreach ($item->sosialmedia as $sosmed_2)
-                                                    {{ $sosmed_2->tier }}  
+                                                    {{ $sosmed_2->tier ?? "-" }}  
                                                     @endforeach
                                                 </td>
                                                 <td> 
                                                      @foreach ($item->sosialmedia as $sosmed_1)
-                                                    {{ $sosmed_1->followers }} 
+                                                    {{ $sosmed_1->followers ?? "-" }} 
                                                     @endforeach
                                                 </td>
                                                 <td class="">
                                                     @foreach ($item->sosialmedia as $sosmed_1)
-                                                   {{ $sosmed_1->username }}
+                                                   {{ $sosmed_1->username ?? "-" }}
                                                     @endforeach
                                                 </td>
                                                    @foreach ($item->sosialmedia[0]->rateCard as $sosmed_1)
@@ -64,15 +64,15 @@
                                                 <td>
                                                     @if(count($item->category_1) > 0)
                                                         @foreach ($item->category_1 as $ctg)
-                                                            {{ $ctg->category_2->name }},
+                                                            {{ $ctg->category_2->name ?? "-"  }},
                                                         @endforeach
                                                     @endif
                                                 </td>
-                                                <td>{{ $item->domisili}}</td>
-                                                <td>{{ $item->phone }}</td>
+                                                <td>{{ $item->domisili ?? "-" }}</td>
+                                                <td>{{ $item->phone ?? "-" }}</td>
                                                 <td style="width: 200px;" class="text-truncate">
                                                     @foreach ($item->sosialmedia as $sosmed_1)
-                                                        {{ $sosmed_1->notes }} 
+                                                        {{ $sosmed_1->notes ?? "-" }} 
                                                     @endforeach    
                                                 </td>
                                                 <td class="d-flex align-items-center justify-content-center">
